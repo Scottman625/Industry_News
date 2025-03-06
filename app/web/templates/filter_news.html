@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>產業智能搜</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Select2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" rel="stylesheet" />
+    <style>
+        .select2-container {
+            width: 100% !important;
+        }
+        .news-filter-card {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .news-card {
+            transition: transform 0.2s;
+            border: none;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .news-card:hover {
+            transform: translateY(-5px);
+        }
+        .source-badge {
+            background-color: #e9ecef;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+        .time-divider {
+            position: relative;
+            padding: 20px 0;
+            margin: 20px 0;
+            text-align: center;
+            background: #f8f9fa;
+            border-radius: 5px;
+            font-weight: bold;
+            color: #6c757d;
+        }
+        .tooltip-icon {
+            cursor: help;
+            color: #6c757d;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body class="bg-light">
+<div class="container py-4">
+    <h2 class="mb-4 text-center">產業智能搜</h2>
+    
+    <!-- 篩選表單 -->
+    <div class="news-filter-card">
+        <form method="get" class="row g-3">
+            <!-- 產業選擇區 -->
+            <div class="col-md-6">
+                <label for="{{ form.industry.id_for_label }}" class="form-label fw-bold">
+                    {{ form.industry.label }}
+                </label>
+                {{ form.industry }}
+            </div>
+
+            <!-- 關鍵字選擇區 -->
+            <div class="col-md-6">
+                <label for="{{ form.keywords.id_for_label }}" class="form-label fw-bold">
+                    {{ form.keywords.label }}
+                </label>
+                {{ form.keywords }}
+            </div>
+
+            <!-- 時間和更新選項 -->
+            <div class="col-md-8">
+                <div class="row g-2">
+                    <div class="col-md-6">
+                        <label for="{{ form.time_range.id_for_label }}" class="form-label fw-bold">
+                            {{ form.time_range.label }}
+                        </label>
+                        {{ form.time_range }}
+                    </div>
+                    <div class="col-md-6 d-flex align-items-end">
+                        <div class="form-check mb-2">
+                            {{ form.fetch_new }}
+                            <label class="form-check-label" for="{{ form.fetch_new.id_for_label }}">
+                                {{ form.fetch_new.label }}
+                                <i class="bi bi-question-circle tooltip-icon" 
+                                   data-bs-toggle="tooltip" 
+                                   title="{{ form.fetch_new.help_text }}">?</i>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 搜尋按鈕 -->
+            <div class="col-md-4 d-flex align-items-end">
+                <button type="submit" class="btn btn-primary w-100">搜尋新聞</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- 訊息顯示區 -->
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        {% endfor %}
+    {% endif %}
+
+    <!-- 搜尋結果統計 -->
+    {% if page_obj %}
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h5 class="mb-0">共找到 {{ total_count }} 篇相關新聞</h5>
+            <div class="text-muted">
+                顯示第 {{ page_obj.start_index }} - {{ page_obj.end_index }} 篇
+            </div>
+        </div>
+    {% endif %}
+
+    <!-- 新聞列表 -->
+    <div class="row">
+        {% if page_obj %}
+            {% for article in page_obj %}
+                {% ifchanged article.published_at|date:"Y-m-d" %}
+                    <div class="col-12">
+                        <div class="time-divider">
+                            {{ article.published_at|date:"Y年m月d日" }}
+                        </div>
+                    </div>
+                {% endifchanged %}
+                <div class="col-12 mb-4">
+                    <div class="card news-card">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">
+                                <a href="{{ article.url }}" target="_blank" class="text-decoration-none">
+                                    {{ article.title }}
+                                </a>
+                            </h5>
+                            <p class="card-text text-muted">{{ article.description }}</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="source-badge">{{ article.source }}</span>
+                                <small class="text-muted">
+                                    {{ article.published_at|date:"H:i" }}
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+            
+            <!-- 分頁導航 -->
+            {% if page_obj.paginator.num_pages > 1 %}
+                <div class="col-12">
+                    <nav aria-label="新聞分頁">
+                        <ul class="pagination justify-content-center">
+                            {% if page_obj.has_previous %}
+                                <li class="page-item">
+                                    <a class="page-link" href="?page=1{% for key, value in current_filters.items %}{% if key != 'page' %}&{{ key }}={{ value }}{% endif %}{% endfor %}">&laquo; 第一頁</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="?page={{ page_obj.previous_page_number }}{% for key, value in current_filters.items %}{% if key != 'page' %}&{{ key }}={{ value }}{% endif %}{% endfor %}">上一頁</a>
+                                </li>
+                            {% endif %}
+
+                            {% for num in page_obj.paginator.page_range %}
+                                {% if page_obj.number == num %}
+                                    <li class="page-item active">
+                                        <span class="page-link">{{ num }}</span>
+                                    </li>
+                                {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+                                    <li class="page-item">
+                                        <a class="page-link" href="?page={{ num }}{% for key, value in current_filters.items %}{% if key != 'page' %}&{{ key }}={{ value }}{% endif %}{% endfor %}">{{ num }}</a>
+                                    </li>
+                                {% endif %}
+                            {% endfor %}
+
+                            {% if page_obj.has_next %}
+                                <li class="page-item">
+                                    <a class="page-link" href="?page={{ page_obj.next_page_number }}{% for key, value in current_filters.items %}{% if key != 'page' %}&{{ key }}={{ value }}{% endif %}{% endfor %}">下一頁</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="?page={{ page_obj.paginator.num_pages }}{% for key, value in current_filters.items %}{% if key != 'page' %}&{{ key }}={{ value }}{% endif %}{% endfor %}">最後一頁 &raquo;</a>
+                                </li>
+                            {% endif %}
+                        </ul>
+                    </nav>
+                </div>
+            {% endif %}
+        {% else %}
+            <div class="col-12">
+                <div class="alert alert-info" role="alert">
+                    目前沒有符合條件的新聞文章
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // 初始化產業選擇
+        $('#{{ form.industry.id_for_label }}').select2({
+            theme: 'bootstrap-5',
+            placeholder: '選擇或輸入產業類別...',
+            allowClear: true,
+            tags: true,
+            createTag: function(params) {
+                return {
+                    id: params.term,
+                    text: params.term,
+                    newTag: true
+                }
+            }
+        });
+        
+        // 初始化關鍵字選擇
+        $('#{{ form.keywords.id_for_label }}').select2({
+            theme: 'bootstrap-5',
+            placeholder: '選擇或輸入關鍵字...',
+            allowClear: true,
+            tags: true,
+            multiple: true,
+            createTag: function(params) {
+                return {
+                    id: params.term,
+                    text: params.term,
+                    newTag: true
+                }
+            }
+        });
+
+        // 初始化工具提示
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        });
+    });
+</script>
+</body>
+</html>
