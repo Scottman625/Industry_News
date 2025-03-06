@@ -29,7 +29,12 @@ SECRET_KEY = "django-insecure-692-a!b4g)8_vxjth^=r$ump)v964&l^(##%^*i#&==ig937!i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'industry.stockfunction.cloud',
+    'www.industry.stockfunction.cloud',
+    'localhost',
+    '127.0.0.1',
+]
 
 
 # Application definition
