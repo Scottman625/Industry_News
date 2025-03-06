@@ -18,7 +18,7 @@ if [ -d "$PROJECT_BASE_PATH" ]; then
     echo "Updating existing repository..."
     cd $PROJECT_BASE_PATH
     git fetch
-    git reset --hard origin/main
+    git reset --hard origin/master
 else
     echo "Creating project directory..."
     mkdir -p $PROJECT_BASE_PATH
