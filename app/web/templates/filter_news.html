@@ -49,11 +49,22 @@
             color: #6c757d;
             margin-left: 5px;
         }
+        .site-title {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .site-title:hover {
+            color: #007bff;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body class="bg-light">
 <div class="container py-4">
-    <h2 class="mb-4 text-center">產業智能搜</h2>
+    <h2 class="mb-4 text-center">
+        <a href="{% url 'filter_news' %}" class="site-title">產業智能搜</a>
+    </h2>
     
     <!-- 篩選表單 -->
     <div class="news-filter-card">
