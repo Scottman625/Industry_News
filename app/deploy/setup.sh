@@ -17,8 +17,22 @@ if [ -d "$PROJECT_BASE_PATH" ]; then
     echo "Directory $PROJECT_BASE_PATH already exists"
     echo "Updating existing repository..."
     cd $PROJECT_BASE_PATH
-    git fetch
-    git reset --hard master
+    
+    # 檢查是否為 git 倉庫
+    if [ -d ".git" ]; then
+        # 獲取遠端分支信息
+        git fetch origin
+        # 獲取當前分支名稱
+        CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD || echo "master")
+        echo "Current branch: $CURRENT_BRANCH"
+        # 重置到遠端分支的最新狀態
+        git reset --hard "origin/$CURRENT_BRANCH"
+    else
+        echo "Not a git repository. Removing and cloning..."
+        cd ..
+        rm -rf $PROJECT_BASE_PATH
+        git clone $PROJECT_GIT_URL $PROJECT_BASE_PATH
+    fi
 else
     echo "Creating project directory..."
     mkdir -p $PROJECT_BASE_PATH
