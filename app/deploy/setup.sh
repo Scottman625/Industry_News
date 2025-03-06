@@ -8,6 +8,18 @@ PROJECT_GIT_URL='https://github.com/Scottman625/Industry_News.git'
 PROJECT_BASE_PATH='/usr/local/apps/industry_news'
 PROJECT_PATH='/usr/local/apps/industry_news/app'
 
+# 檢查環境變數
+if [ -z "$NEWS_API_KEY" ]; then
+    echo "ERROR: NEWS_API_KEY environment variable is not set"
+    echo "Please set your NewsAPI key using:"
+    echo "export NEWS_API_KEY=your_api_key_here"
+    exit 1
+fi
+
+# 創建或更新 .env 文件
+echo "Setting up environment variables..."
+echo "NEWS_API_KEY=$NEWS_API_KEY" > $PROJECT_PATH/.env
+
 echo "Installing dependencies..."
 apt-get update
 apt-get install -y python3-dev python3-venv sqlite python3-pip supervisor nginx git
@@ -54,7 +66,7 @@ $PROJECT_BASE_PATH/env/bin/python3 -m pip install --upgrade pip
 # 安裝 Python 套件
 echo "Installing Python packages..."
 $PROJECT_BASE_PATH/env/bin/python3 -m pip install -r $PROJECT_BASE_PATH/requirements.txt
-$PROJECT_BASE_PATH/env/bin/python3 -m pip install uwsgi
+$PROJECT_BASE_PATH/env/bin/python3 -m pip install uwsgi python-dotenv
 
 # 執行資料庫遷移和收集靜態文件
 echo "Running migrations and collecting static files..."
@@ -64,6 +76,10 @@ $PROJECT_BASE_PATH/env/bin/python3 manage.py collectstatic --noinput
 
 # 配置 supervisor
 echo "Configuring supervisor..."
+# 創建 supervisor 環境變數配置
+echo "[program:profiles_api]
+environment=NEWS_API_KEY=\"$NEWS_API_KEY\"" > /etc/supervisor/conf.d/profiles_api_env.conf
+
 cp $PROJECT_PATH/deploy/supervisor_profiles_api.conf /etc/supervisor/conf.d/profiles_api.conf
 supervisorctl reread
 supervisorctl update
