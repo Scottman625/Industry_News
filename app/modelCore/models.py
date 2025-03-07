@@ -4,6 +4,7 @@ from django.contrib.auth.models import (
     BaseUserManager,
     PermissionsMixin,
 )
+from django.utils import timezone
 # Create your models here.
 # news_app/models.py
 
@@ -59,25 +60,86 @@ class User(AbstractBaseUser, PermissionsMixin):
     USERNAME_FIELD = "email"
 
 class Industry(models.Model):
-    name = models.CharField(max_length=100, verbose_name="產業名稱")
-    description = models.TextField(blank=True, null=True, verbose_name="產業描述")
+    name = models.CharField("產業名稱", max_length=50, unique=True)
+    created_at = models.DateTimeField("建立時間", default=timezone.now)
+    updated_at = models.DateTimeField("更新時間", auto_now=True)
 
     def __str__(self):
         return self.name
 
+    class Meta:
+        verbose_name = "產業"
+        verbose_name_plural = "產業"
+
 class Keyword(models.Model):
-    keyword = models.CharField(max_length=100, verbose_name="關鍵字")
-    industry = models.ForeignKey(Industry, on_delete=models.CASCADE, related_name='keywords', verbose_name="所屬產業")
+    keyword = models.CharField("關鍵字", max_length=50)
+    industry = models.ForeignKey(
+        Industry, 
+        on_delete=models.SET_NULL, 
+        null=True, 
+        blank=True, 
+        related_name='keywords',
+        verbose_name="相關產業"
+    )
+    created_at = models.DateTimeField("建立時間", default=timezone.now)
+    updated_at = models.DateTimeField("更新時間", auto_now=True)
 
     def __str__(self):
         return self.keyword
 
+    class Meta:
+        verbose_name = "關鍵字"
+        verbose_name_plural = "關鍵字"
+
 class NewsArticle(models.Model):
-    title = models.CharField(max_length=255, verbose_name="標題")
-    description = models.TextField(blank=True, null=True, verbose_name="摘要")
-    url = models.URLField(unique=True, verbose_name="文章連結")
-    source = models.CharField(max_length=255, verbose_name="來源")
-    published_at = models.DateTimeField(verbose_name="發布時間")
+    title = models.CharField("標題", max_length=200)
+    description = models.TextField("描述", null=True, blank=True)
+    url = models.URLField("連結", unique=True)
+    source = models.CharField("來源", max_length=100)
+    published_at = models.DateTimeField("發布時間", null=True)
+    created_at = models.DateTimeField("建立時間", default=timezone.now)
+    
+    # 新增產業和關鍵字關聯
+    industries = models.ManyToManyField(
+        Industry, 
+        blank=True,
+        related_name='news_articles',
+        verbose_name="相關產業"
+    )
+    keywords = models.ManyToManyField(
+        Keyword, 
+        blank=True,
+        related_name='news_articles',
+        verbose_name="相關關鍵字"
+    )
 
     def __str__(self):
         return self.title
+
+    class Meta:
+        verbose_name = "新聞文章"
+        verbose_name_plural = "新聞文章"
+        ordering = ['-published_at']
+
+    def detect_and_link_industries_keywords(self):
+        """
+        檢測文章內容中的產業和關鍵字，並建立關聯
+        """
+        # 獲取所有關鍵字
+        all_keywords = Keyword.objects.all()
+        
+        # 檢查標題和描述中的關鍵字
+        for keyword in all_keywords:
+            if (keyword.keyword in self.title or 
+                (self.description and keyword.keyword in self.description)):
+                # 添加關鍵字關聯
+                self.keywords.add(keyword)
+                # 如果關鍵字有關聯的產業，也添加產業關聯
+                if keyword.industry:
+                    self.industries.add(keyword.industry)
+
+    def save(self, *args, **kwargs):
+        # 先保存文章本身
+        super().save(*args, **kwargs)
+        # 然後檢測並關聯產業和關鍵字
+        self.detect_and_link_industries_keywords()

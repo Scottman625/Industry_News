@@ -92,7 +92,7 @@ def filter_news(request):
                     keywords_to_fetch.add(industry_name)
                     # 創建新產業和關鍵字
                     industry = Industry.objects.create(name=industry_name)
-                    Keyword.objects.create(keyword=industry_name, industry=industry)
+                    keyword = Keyword.objects.create(keyword=industry_name, industry=industry)
                     messages.success(request, f"已新增產業類別：{industry_name}")
 
             # 處理關鍵字
@@ -115,7 +115,8 @@ def filter_news(request):
                         messages.error(request, error)
                         continue
                     
-                    saved_count = save_articles(data.get('articles', []))
+                    keyword_obj = Keyword.objects.filter(keyword=keyword).first()
+                    saved_count = save_articles(data.get('articles', []), keyword_obj)
                     total_new_articles += saved_count
                 
                 if total_new_articles > 0:
@@ -124,33 +125,15 @@ def filter_news(request):
                     messages.info(request, "沒有找到新的文章")
         
         # 篩選文章
-        q = Q()
-        
-        # 處理產業篩選
         if industry_name:
-            # 先查找產業關鍵字
-            industry_keywords = Keyword.objects.filter(
-                industry__name=industry_name
-            ).values_list('keyword', flat=True)
-            
-            if industry_keywords:
-                # 如果有產業關鍵字，用它們來搜尋
-                for kw in industry_keywords:
-                    q |= Q(title__icontains=kw) | Q(description__icontains=kw)
-            else:
-                # 如果沒有產業關鍵字，直接用產業名稱搜尋
-                q |= Q(title__icontains=industry_name) | Q(description__icontains=industry_name)
+            articles = articles.filter(industries__name=industry_name)
         
-        # 處理關鍵字篩選
-        for keyword in keyword_list:
-            q |= Q(title__icontains=keyword) | Q(description__icontains=keyword)
-        
-        if q:
-            articles = articles.filter(q)
+        if keyword_list:
+            articles = articles.filter(keywords__keyword__in=keyword_list)
     
     # 分頁處理
     page_number = request.GET.get('page', 1)
-    paginator = Paginator(articles, 10)  # 每頁顯示10篇文章
+    paginator = Paginator(articles.distinct(), 10)  # 使用 distinct() 避免重複
     page_obj = paginator.get_page(page_number)
     
     # 對當前頁的文章進行預處理

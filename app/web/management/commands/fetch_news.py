@@ -29,9 +29,9 @@ class NewsAPIClient:
             
         return response.json(), None
 
-def save_articles(articles, stdout=None):
+def save_articles(articles, keyword_obj=None, stdout=None):
     """
-    儲存新聞文章到資料庫
+    儲存新聞文章到資料庫，並關聯產業和關鍵字
     """
     saved_count = 0
     for article in articles:
@@ -50,7 +50,24 @@ def save_articles(articles, stdout=None):
                 'published_at': published_at,
             }
         )
+
         if created:
+            # 如果有關鍵字物件，添加關聯
+            if keyword_obj:
+                news.keywords.add(keyword_obj)
+                # 如果關鍵字有關聯的產業，也添加產業關聯
+                if keyword_obj.industry:
+                    news.industries.add(keyword_obj.industry)
+            
+            # 檢測標題和描述中是否包含其他關鍵字
+            all_keywords = Keyword.objects.all()
+            for kw in all_keywords:
+                if (kw.keyword in news.title or 
+                    (news.description and kw.keyword in news.description)):
+                    news.keywords.add(kw)
+                    if kw.industry:
+                        news.industries.add(kw.industry)
+            
             saved_count += 1
             if stdout:
                 stdout.write(f"儲存文章：{news.title}")
@@ -122,7 +139,7 @@ class Command(BaseCommand):
                 self.stderr.write(error)
                 continue
                 
-            saved_count = save_articles(data.get('articles', []), self.stdout)
+            saved_count = save_articles(data.get('articles', []), keyword, self.stdout)
             total_articles += saved_count
 
         self.stdout.write(f"完成！共儲存 {total_articles} 篇新文章。")

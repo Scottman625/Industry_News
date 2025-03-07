@@ -5,3 +5,4 @@ __pycache__/
 *.pyd
 *.pyw
 .env
+app/db.sqlite3
