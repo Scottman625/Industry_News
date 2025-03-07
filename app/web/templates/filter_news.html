@@ -248,12 +248,16 @@
                 },
                 cache: true
             },
-            createTag: function(params) {
-                return {
-                    id: params.term,
-                    text: params.term,
-                    newOption: true
-                };
+            language: {
+                noResults: function() {
+                    return "沒有找到相符的產業";
+                }
+            },
+            templateResult: function(data) {
+                if (data.text === '選擇或輸入產業類別...') {
+                    return null;
+                }
+                return data.text;
             }
         });
         
@@ -287,12 +291,22 @@
                 },
                 cache: true
             },
-            createTag: function(params) {
-                return {
-                    id: params.term,
-                    text: params.term,
-                    newOption: true
-                };
+            language: {
+                noResults: function() {
+                    return "沒有找到相符的關鍵字";
+                }
+            },
+            templateResult: function(data) {
+                if (data.text === '選擇或輸入關鍵字...') {
+                    return null;
+                }
+                return data.text;
+            },
+            templateSelection: function(data) {
+                if (data.text === '選擇或輸入關鍵字...') {
+                    return null;
+                }
+                return data.text;
             }
         });
 
@@ -302,7 +316,7 @@
             $search.off('keyup.custom').on('keyup.custom', function(e) {
                 if (e.key === 'Enter') {
                     var term = $(this).val().trim();
-                    if (term) {
+                    if (term && term !== '選擇或輸入產業類別...') {
                         var $option = new Option(term, term, true, true);
                         $industry.append($option).trigger('change');
                         $industry.select2('close');
@@ -317,31 +331,56 @@
             $search.off('keyup.custom').on('keyup.custom', function(e) {
                 if (e.key === 'Enter') {
                     var term = $(this).val().trim();
-                    if (term) {
+                    if (term && term !== '選擇或輸入關鍵字...') {
                         var currentVals = $keywords.val() || [];
-                        if (!currentVals.includes(term)) {
+                        // 檢查是否已存在（不區分大小寫）
+                        var exists = currentVals.some(function(val) {
+                            return val.toLowerCase() === term.toLowerCase();
+                        });
+                        if (!exists) {
                             currentVals.push(term);
                             var $option = new Option(term, term, true, true);
                             $keywords.append($option);
                             $keywords.val(currentVals).trigger('change');
                         }
+                        $keywords.select2('close');
                     }
                 }
             });
         });
 
         // 當產業變更時，重置關鍵字
-        $industry.on('change', function() {
+        $industry.on('change', function(e) {
+            var selectedValue = $(this).val();
+            if (!selectedValue || selectedValue === '選擇或輸入產業類別...') {
+                $(this).val(null).trigger('change');
+                return;
+            }
+
             var selectedValues = $keywords.val() || [];
-            $keywords.val(null).trigger('change');
+            // 只有在有產業變更時才清空關鍵字
+            if (e.target.value !== e.target._oldValue) {
+                $keywords.val(null).trigger('change');
+                e.target._oldValue = e.target.value;
+            }
+        });
+
+        // 監聽關鍵字變更事件
+        $keywords.on('select2:selecting', function(e) {
+            var term = e.params.args.data.text;
+            if (!term || term === '選擇或輸入關鍵字...') {
+                e.preventDefault();
+                return false;
+            }
             
-            // 如果有已選擇的值，保留它們
-            if (selectedValues.length > 0) {
-                selectedValues.forEach(function(value) {
-                    var option = new Option(value, value, true, true);
-                    $keywords.append(option);
-                });
-                $keywords.trigger('change');
+            var currentVals = $keywords.val() || [];
+            // 檢查是否已存在（不區分大小寫）
+            var exists = currentVals.some(function(val) {
+                return val.toLowerCase() === term.toLowerCase();
+            });
+            if (exists) {
+                e.preventDefault();
+                return false;
             }
         });
 

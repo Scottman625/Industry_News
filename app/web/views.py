@@ -38,6 +38,15 @@ def clean_text(text):
         # 移除額外的空白
         text = text.strip()
         
+        # 移除或替換特殊字符
+        text = re.sub(r'[-_]+', ' ', text)  # 將連字符和底線替換為空格
+        text = re.sub(r'\s+', ' ', text)    # 將多個空格替換為單個空格
+        text = text.strip()                  # 再次清理前後空白
+        
+        # 如果清理後的文字太短或只包含特殊字符或空白，返回空字符串
+        if not text or len(text) < 2 or not any(c.isalnum() for c in text):
+            return ""
+        
     return text
 
 def create_or_get_industry(name):
@@ -49,7 +58,7 @@ def create_or_get_industry(name):
     
     # 清理產業名稱
     name = clean_text(name)
-    if not name:
+    if not name or len(name) < 1:
         return None
         
     industry, created = Industry.objects.get_or_create(name=name)
@@ -67,24 +76,43 @@ def create_or_get_keywords(keyword_str, industry=None):
     if isinstance(keyword_str, str):
         # 清理並分割關鍵字
         keyword_str = clean_text(keyword_str)
-        keyword_list = [clean_text(k) for k in keyword_str.split(',') if clean_text(k)]
+        if not keyword_str:  # 如果清理後為空，直接返回
+            return []
+        keyword_list = [clean_text(k) for k in keyword_str.split(',')]
     else:
         # 如果已經是列表，清理每個元素
-        keyword_list = [clean_text(k) for k in keyword_str if clean_text(k)]
+        keyword_list = [clean_text(k) for k in keyword_str]
+    
+    # 過濾掉空白或無效的關鍵字
+    keyword_list = [k for k in keyword_list if k and len(k) >= 2 and not k.isspace()]
     
     # 創建或獲取每個關鍵字
     for kw in keyword_list:
-        if kw:  # 確保關鍵字不為空
-            keyword, created = Keyword.objects.get_or_create(
-                keyword=kw,
-                defaults={'industry': industry}
-            )
-            keywords.append(keyword)
+        kw = clean_text(kw)  # 再次清理確保乾淨
+        if kw and len(kw) >= 2 and not kw.isspace():  # 確保關鍵字有效
+            # 檢查是否已存在相同的關鍵字（不區分大小寫）
+            existing_keyword = Keyword.objects.filter(keyword__iexact=kw).first()
+            if existing_keyword:
+                # 如果關鍵字已存在，直接使用現有的
+                keywords.append(existing_keyword)
+            else:
+                # 如果關鍵字不存在，創建新的
+                try:
+                    keyword = Keyword.objects.create(
+                        keyword=kw,
+                        industry=industry
+                    )
+                    keywords.append(keyword)
+                except Exception as e:
+                    # 如果創建過程中出現錯誤，記錄錯誤但繼續處理
+                    print(f"Error creating keyword '{kw}': {str(e)}")
+                    continue
     return keywords
 
 def filter_news(request):
     form = FilterForm(request.GET or None)
     articles = NewsArticle.objects.all().order_by('-published_at')
+    total_new_articles = 0  # 初始化變數
     
     if form.is_valid():
         industry_name = form.cleaned_data.get('industry')
@@ -92,8 +120,9 @@ def filter_news(request):
         industry_name = clean_text(industry_name)
         
         keyword_list = form.cleaned_data.get('keywords', [])
-        # 清理關鍵字列表
-        keyword_list = [clean_text(k) for k in keyword_list if clean_text(k)]
+        # 清理關鍵字列表，並移除無效的關鍵字
+        keyword_list = [k for k in [clean_text(k) for k in keyword_list] if k and len(k) >= 2 and not k.isspace()]
+        
         fetch_new = form.cleaned_data.get('fetch_new', False)
         time_range = form.cleaned_data.get('time_range', 'all')
         
@@ -115,63 +144,119 @@ def filter_news(request):
         if fetch_new:
             # 獲取最新新聞
             client = NewsAPIClient()
-            total_new_articles = 0
             keywords_to_fetch = set()
 
             # 處理產業關鍵字
-            if industry_name:
+            if industry_name and len(industry_name) >= 2 and not industry_name.isspace():
                 # 嘗試獲取現有產業
                 industry = Industry.objects.filter(name=industry_name).first()
                 if industry:
                     # 如果產業存在，獲取其關鍵字
                     industry_keywords = Keyword.objects.filter(industry=industry)
-                    keywords_to_fetch.update(k.keyword for k in industry_keywords)
+                    keywords_to_fetch.update(k.keyword for k in industry_keywords if k.keyword and len(k.keyword) >= 2 and not k.keyword.isspace())
                 else:
                     # 如果產業不存在，直接使用產業名稱作為關鍵字
                     keywords_to_fetch.add(industry_name)
                     # 創建新產業和關鍵字
                     industry = Industry.objects.create(name=industry_name)
-                    keyword = Keyword.objects.create(keyword=industry_name, industry=industry)
-                    messages.success(request, f"已新增產業類別：{industry_name}")
+                    # 檢查是否已存在相同的關鍵字
+                    existing_keyword = Keyword.objects.filter(keyword__iexact=industry_name).first()
+                    if not existing_keyword and len(industry_name) >= 2 and not industry_name.isspace():
+                        keyword = Keyword.objects.create(keyword=industry_name, industry=industry)
+                        messages.success(request, f"已新增產業類別：{industry_name}")
 
-            # 處理關鍵字
+            # 處理一般關鍵字
             for kw in keyword_list:
-                keywords_to_fetch.add(kw)
-                # 如果關鍵字不存在，創建它
-                keyword_obj = Keyword.objects.filter(keyword=kw).first()
-                if not keyword_obj:
-                    keyword_obj = Keyword.objects.create(
-                        keyword=kw,
-                        industry=industry if industry_name else None
-                    )
-                    messages.success(request, f"已新增關鍵字：{kw}")
+                kw = clean_text(kw)
+                if kw and len(kw) >= 2 and not kw.isspace():
+                    keywords_to_fetch.add(kw)
+                    # 檢查是否已存在相同的關鍵字
+                    keyword_obj = Keyword.objects.filter(keyword__iexact=kw).first()
+                    if not keyword_obj:
+                        try:
+                            keyword_obj = Keyword.objects.create(
+                                keyword=kw,
+                                industry=industry if industry_name else None
+                            )
+                            messages.success(request, f"已新增關鍵字：{kw}")
+                        except Exception as e:
+                            print(f"Error creating keyword '{kw}': {str(e)}")
+                            continue
 
             if not keywords_to_fetch:
                 messages.warning(request, "請選擇至少一個產業或關鍵字來獲取新聞")
             else:
-                total_fetched = 0  # 總共嘗試獲取的文章數
-                total_new_articles = 0  # 實際新增的文章數
+                # 分離產業關鍵字和一般關鍵字
+                industry_keywords = None
+                search_keywords = []
                 
-                for keyword in keywords_to_fetch:
-                    data, error = client.fetch_news(keyword, limit=5)
-                    if error:
-                        messages.error(request, error)
-                        continue
-                    
-                    if data and 'articles' in data:
-                        total_fetched += len(data['articles'])
-                        keyword_obj = Keyword.objects.filter(keyword=keyword).first()
-                        saved_count = save_articles(data.get('articles', []), keyword_obj)
-                        total_new_articles += saved_count
+                if industry_name:
+                    industry = Industry.objects.filter(name=industry_name).first()
+                    if industry:
+                        industry_keywords = [k.keyword for k in Keyword.objects.filter(industry=industry)]
                 
-                if total_fetched == 0:
-                    messages.info(request, "沒有找到相關的新聞文章")
-                elif total_new_articles > 0:
-                    messages.success(request, f"成功獲取 {total_new_articles} 篇最新新聞！")
-                    # 重新查詢文章列表，確保包含新獲取的文章
-                    articles = NewsArticle.objects.all().order_by('-published_at')
+                # 只使用用戶選擇的關鍵字進行搜尋
+                search_keywords = keyword_list if keyword_list else [industry_name]
+                
+                # 一次性獲取所有關鍵字的新聞
+                data, error = client.fetch_news(
+                    search_keywords,
+                    industry_keywords=industry_keywords,
+                    limit=10
+                )
+                
+                if error:
+                    messages.error(request, error)
                 else:
-                    messages.info(request, "找到的文章都已經存在，沒有新增新聞")
+                    total_fetched = len(data.get('articles', [])) if data and 'articles' in data else 0
+                    
+                    if total_fetched > 0:
+                        # 為每個關鍵字建立關聯
+                        saved_articles = []  # 用於存儲新保存的文章
+                        for keyword in keywords_to_fetch:
+                            keyword_obj = Keyword.objects.filter(keyword=keyword).first()
+                            if keyword_obj and data and 'articles' in data:
+                                saved_count = save_articles(data.get('articles', []), keyword_obj)
+                                total_new_articles += saved_count
+                        
+                        if total_new_articles > 0:
+                            messages.success(request, f"成功獲取 {total_new_articles} 篇最新新聞！")
+                            
+                            # 根據當前的篩選條件重新查詢文章
+                            q = Q()
+                            
+                            # 處理產業篩選
+                            if industry_name:
+                                industry_q = Q(industries__name=industry_name)
+                                text_q = Q(title__icontains=industry_name) | Q(description__icontains=industry_name)
+                                industry_keywords = Keyword.objects.filter(industry__name=industry_name)
+                                if industry_keywords.exists():
+                                    keywords_q = Q(keywords__in=industry_keywords)
+                                    q = industry_q | text_q | keywords_q
+                                else:
+                                    q = industry_q | text_q
+                            
+                            # 處理關鍵字篩選
+                            if keyword_list:
+                                keyword_q = Q()
+                                for keyword in keyword_list:
+                                    keyword_q |= Q(keywords__keyword=keyword)
+                                    keyword_q |= Q(title__icontains=keyword) | Q(description__icontains=keyword)
+                                
+                                if industry_name:
+                                    q &= keyword_q
+                                else:
+                                    q = keyword_q
+                            
+                            # 使用篩選條件查詢文章
+                            if q:
+                                articles = NewsArticle.objects.filter(q).distinct().order_by('-published_at')
+                            else:
+                                articles = NewsArticle.objects.all().order_by('-published_at')
+                        else:
+                            messages.info(request, "找到的文章都已經存在，沒有新增新聞")
+                    else:
+                        messages.info(request, "沒有找到相關的新聞文章")
         
         # 篩選文章
         q = Q()
@@ -186,54 +271,31 @@ def filter_news(request):
             industry_keywords = Keyword.objects.filter(industry__name=industry_name)
             if industry_keywords.exists():
                 keywords_q = Q(keywords__in=industry_keywords)
-                q |= industry_q | text_q | keywords_q
+                q = industry_q | text_q | keywords_q
             else:
-                q |= industry_q | text_q
+                q = industry_q | text_q
         
         # 處理關鍵字篩選
         if keyword_list:
             keyword_q = Q()
             for keyword in keyword_list:
-                # 先查找關鍵字關聯的文章
+                # 查找關鍵字關聯的文章
                 keyword_q |= Q(keywords__keyword=keyword)
-                # 再查找標題或描述中包含關鍵字的文章
+                # 查找標題或描述中包含關鍵字的文章
                 keyword_q |= Q(title__icontains=keyword) | Q(description__icontains=keyword)
-                
-                # 檢查現有文章是否包含此關鍵字，如果包含則建立關聯
-                keyword_obj = Keyword.objects.filter(keyword=keyword).first()
-                if keyword_obj:
-                    matching_articles = NewsArticle.objects.filter(
-                        Q(title__icontains=keyword) | Q(description__icontains=keyword)
-                    ).exclude(keywords=keyword_obj)
-                    
-                    for article in matching_articles:
-                        article.keywords.add(keyword_obj)
             
-            q |= keyword_q
+            # 如果同時有產業和關鍵字，使用 AND (&) 運算符
+            if industry_name:
+                q &= keyword_q
+            else:
+                q = keyword_q
         
         if q:
             articles = articles.filter(q).distinct()  # 使用 distinct() 去除重複
-            
-        # 如果篩選後沒有文章，且剛才成功獲取了新聞，重新進行關鍵字關聯
-        if not articles.exists() and total_new_articles > 0:
-            # 重新處理關鍵字關聯
-            for keyword in keyword_list:
-                keyword_obj = Keyword.objects.filter(keyword=keyword).first()
-                if keyword_obj:
-                    matching_articles = NewsArticle.objects.filter(
-                        Q(title__icontains=keyword) | Q(description__icontains=keyword)
-                    ).exclude(keywords=keyword_obj)
-                    
-                    for article in matching_articles:
-                        article.keywords.add(keyword_obj)
-            
-            # 重新進行篩選
-            if q:
-                articles = NewsArticle.objects.filter(q).distinct()
     
     # 分頁處理
     page_number = request.GET.get('page', 1)
-    paginator = Paginator(articles, 10)  # 移除這裡的 distinct() 因為已經在上面處理過了
+    paginator = Paginator(articles, 10)
     page_obj = paginator.get_page(page_number)
     
     # 對當前頁的文章進行預處理
@@ -259,12 +321,53 @@ def get_keywords(request):
     query = request.GET.get('q', '')
     industry = request.GET.get('industry', '')
     
-    keywords = Keyword.objects.all()
+    # 清理查詢字符串
+    query = clean_text(query)
+    industry = clean_text(industry)
+    
+    # 排除預設提示文字和空選項
+    excluded_keywords = ['選擇或輸入關鍵字...', '', None]
+    
+    # 使用 distinct 確保關鍵字不重複，同時排除空白或無效的關鍵字
+    keywords = Keyword.objects.exclude(
+        Q(keyword__in=excluded_keywords) |
+        Q(keyword__isnull=True) |
+        Q(keyword__exact='') |
+        Q(keyword__regex=r'^\s*$')
+    ).values('keyword').distinct()
     
     if industry:
-        keywords = keywords.filter(industry__name=industry)
+        # 如果選擇了產業，優先顯示該產業的關鍵字，但也包含其他關鍵字
+        industry_keywords = Keyword.objects.filter(
+            industry__name=industry,
+            keyword__icontains=query if query else ''
+        ).exclude(
+            Q(keyword__in=excluded_keywords) |
+            Q(keyword__isnull=True) |
+            Q(keyword__exact='') |
+            Q(keyword__regex=r'^\s*$')
+        ).values_list('keyword', flat=True)
+        
+        other_keywords = Keyword.objects.exclude(
+            industry__name=industry
+        ).filter(
+            keyword__icontains=query if query else ''
+        ).exclude(
+            Q(keyword__in=excluded_keywords) |
+            Q(keyword__isnull=True) |
+            Q(keyword__exact='') |
+            Q(keyword__regex=r'^\s*$')
+        ).values_list('keyword', flat=True)
+        
+        # 合併結果，確保產業關鍵字優先顯示，並移除重複項
+        all_keywords = list(industry_keywords) + list(set(other_keywords) - set(industry_keywords))
+        # 過濾掉空白、無效或預設的關鍵字
+        all_keywords = [k for k in all_keywords if k and k not in excluded_keywords and clean_text(k)]
+        return JsonResponse([{'keyword': k} for k in all_keywords[:10]], safe=False)
     
     if query:
         keywords = keywords.filter(keyword__icontains=query)
     
-    return JsonResponse(list(keywords.values('keyword'))[:10], safe=False)
+    # 過濾掉空白、無效或預設的關鍵字
+    keywords_list = [k['keyword'] for k in keywords.values('keyword') if k['keyword'] and k['keyword'] not in excluded_keywords and clean_text(k['keyword'])]
+    return JsonResponse([{'keyword': k} for k in keywords_list[:10]], safe=False)

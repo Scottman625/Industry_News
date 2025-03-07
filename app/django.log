@@ -1400,3 +1400,1367 @@ AttributeError: 'list' object has no attribute 'split'
 2025-03-07 12:34:08 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
 2025-03-07 12:34:08 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
 2025-03-07 12:34:08 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 12:34:18 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry= HTTP/1.1" 200 294
+2025-03-07 12:34:18 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry= HTTP/1.1" 200 294
+2025-03-07 12:34:20 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=%E3%84%8C&industry= HTTP/1.1" 200 2
+2025-03-07 12:34:20 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=%E3%84%8C&industry= HTTP/1.1" 200 2
+2025-03-07 12:34:22 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=%E8%81%AF%E7%99%BC%E7%A7%91&industry= HTTP/1.1" 200 35
+2025-03-07 12:34:22 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=%E8%81%AF%E7%99%BC%E7%A7%91&industry= HTTP/1.1" 200 35
+2025-03-07 12:34:22 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=%E8%81%AF%E7%99%BC%E7%A7%91&industry= HTTP/1.1" 200 35
+2025-03-07 12:34:22 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=%E8%81%AF%E7%99%BC%E7%A7%91&industry= HTTP/1.1" 200 35
+2025-03-07 12:34:25 [INFO    ] (basehttp.log_message) "GET /?industry=&keywords=%E8%81%AF%E7%99%BC%E7%A7%91&time_range=today&fetch_new=on HTTP/1.1" 200 25309
+2025-03-07 12:34:25 [INFO    ] (basehttp.log_message) "GET /?industry=&keywords=%E8%81%AF%E7%99%BC%E7%A7%91&time_range=today&fetch_new=on HTTP/1.1" 200 25309
+2025-03-07 12:34:40 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry= HTTP/1.1" 200 294
+2025-03-07 12:34:40 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry= HTTP/1.1" 200 294
+2025-03-07 12:34:44 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 32514
+2025-03-07 12:34:44 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 32514
+2025-03-07 12:47:51 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 12:47:51 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 12:47:52 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 12:47:52 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 12:49:04 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 12:49:04 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 12:49:05 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 12:49:05 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 12:50:54 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 12:50:54 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 12:50:56 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 186
+2025-03-07 12:50:56 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 186
+2025-03-07 12:51:20 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=A&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 2
+2025-03-07 12:51:20 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=A&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 2
+2025-03-07 12:51:20 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 2
+2025-03-07 12:51:20 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 2
+2025-03-07 12:51:27 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 186
+2025-03-07 12:51:27 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 186
+2025-03-07 12:51:30 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 32514
+2025-03-07 12:51:30 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 32514
+2025-03-07 12:51:30 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 12:51:30 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 12:51:33 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 186
+2025-03-07 12:51:33 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 186
+2025-03-07 12:51:34 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 2
+2025-03-07 12:51:34 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 2
+2025-03-07 12:51:41 [ERROR   ] (log.log_response) Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\code\Python\IndustrySearcher\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\Python\IndustrySearcher\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\Python\IndustrySearcher\app\web\views.py", line 222, in filter_news
+    if not articles.exists() and total_new_articles > 0:
+                                 ^^^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'total_new_articles' where it is not associated with a value
+2025-03-07 12:51:41 [ERROR   ] (log.log_response) Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\code\Python\IndustrySearcher\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\Python\IndustrySearcher\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\Python\IndustrySearcher\app\web\views.py", line 222, in filter_news
+    if not articles.exists() and total_new_articles > 0:
+                                 ^^^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'total_new_articles' where it is not associated with a value
+2025-03-07 12:51:41 [ERROR   ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&keywords=AI&time_range=all HTTP/1.1" 500 81404
+2025-03-07 12:51:41 [ERROR   ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&keywords=AI&time_range=all HTTP/1.1" 500 81404
+2025-03-07 12:51:48 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 186
+2025-03-07 12:51:48 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 186
+2025-03-07 12:51:50 [ERROR   ] (log.log_response) Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\code\Python\IndustrySearcher\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\Python\IndustrySearcher\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\Python\IndustrySearcher\app\web\views.py", line 222, in filter_news
+    if not articles.exists() and total_new_articles > 0:
+                                 ^^^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'total_new_articles' where it is not associated with a value
+2025-03-07 12:51:50 [ERROR   ] (log.log_response) Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\code\Python\IndustrySearcher\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\Python\IndustrySearcher\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\Python\IndustrySearcher\app\web\views.py", line 222, in filter_news
+    if not articles.exists() and total_new_articles > 0:
+                                 ^^^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'total_new_articles' where it is not associated with a value
+2025-03-07 12:51:50 [ERROR   ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&time_range=all HTTP/1.1" 500 80990
+2025-03-07 12:51:50 [ERROR   ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&time_range=all HTTP/1.1" 500 80990
+2025-03-07 12:52:51 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 12:52:51 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 12:52:52 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 12:52:52 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 12:53:20 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 12:53:20 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 12:53:20 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 12:53:20 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 12:53:22 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 12:53:22 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 12:53:23 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 12:53:23 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 12:53:23 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 32676
+2025-03-07 12:53:23 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 32676
+2025-03-07 12:53:24 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 12:53:24 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 12:53:24 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 12:53:24 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 12:53:25 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 12:53:25 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 12:53:30 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 186
+2025-03-07 12:53:30 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 186
+2025-03-07 12:53:32 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 186
+2025-03-07 12:53:32 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 186
+2025-03-07 12:53:32 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 186
+2025-03-07 12:53:32 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 186
+2025-03-07 12:53:33 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 32676
+2025-03-07 12:53:33 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 32676
+2025-03-07 12:53:34 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 12:53:34 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 12:53:40 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 186
+2025-03-07 12:53:40 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 186
+2025-03-07 12:53:42 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 186
+2025-03-07 12:53:42 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 186
+2025-03-07 12:53:45 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 2
+2025-03-07 12:53:45 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 2
+2025-03-07 12:53:56 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/industry/ HTTP/1.1" 200 11387
+2025-03-07 12:53:56 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/industry/ HTTP/1.1" 200 11387
+2025-03-07 12:53:56 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 12:53:56 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 12:53:57 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 20296
+2025-03-07 12:53:57 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 20296
+2025-03-07 12:53:57 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 12:53:57 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 12:54:03 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 200 9396
+2025-03-07 12:54:03 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 200 9396
+2025-03-07 12:54:04 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 302 0
+2025-03-07 12:54:04 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 302 0
+2025-03-07 12:54:04 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19146
+2025-03-07 12:54:04 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19146
+2025-03-07 12:54:04 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 12:54:04 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 12:54:08 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 32514
+2025-03-07 12:54:08 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 32514
+2025-03-07 12:54:08 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 12:54:08 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 12:54:11 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 186
+2025-03-07 12:54:11 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 186
+2025-03-07 12:54:13 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 2
+2025-03-07 12:54:13 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 2
+2025-03-07 12:54:32 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&keywords=AI&time_range=all HTTP/1.1" 200 15637
+2025-03-07 12:54:32 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&keywords=AI&time_range=all HTTP/1.1" 200 15637
+2025-03-07 12:54:36 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19781
+2025-03-07 12:54:36 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19781
+2025-03-07 12:54:36 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 12:54:36 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 12:54:38 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/45/change/ HTTP/1.1" 200 13127
+2025-03-07 12:54:38 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/45/change/ HTTP/1.1" 200 13127
+2025-03-07 12:54:38 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 12:54:38 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 12:54:40 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19781
+2025-03-07 12:54:40 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19781
+2025-03-07 12:54:41 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/46/change/ HTTP/1.1" 200 13127
+2025-03-07 12:54:41 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/46/change/ HTTP/1.1" 200 13127
+2025-03-07 12:54:41 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 12:54:41 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 12:54:42 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19781
+2025-03-07 12:54:42 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19781
+2025-03-07 12:54:43 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/44/change/ HTTP/1.1" 200 13098
+2025-03-07 12:54:43 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/44/change/ HTTP/1.1" 200 13098
+2025-03-07 12:54:43 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 12:54:43 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 12:54:48 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19781
+2025-03-07 12:54:48 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19781
+2025-03-07 12:54:55 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 12:54:55 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 12:54:56 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 12:54:56 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 12:54:57 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 12:54:57 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 12:54:58 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 12:54:58 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 12:55:01 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 200 9118
+2025-03-07 12:55:01 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 200 9118
+2025-03-07 12:55:03 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 302 0
+2025-03-07 12:55:03 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 302 0
+2025-03-07 12:55:03 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19146
+2025-03-07 12:55:03 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19146
+2025-03-07 12:55:03 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 12:55:03 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 12:55:05 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 32514
+2025-03-07 12:55:05 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 32514
+2025-03-07 12:55:06 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 12:55:06 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 12:55:09 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 186
+2025-03-07 12:55:09 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 186
+2025-03-07 12:55:11 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 186
+2025-03-07 12:55:11 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 186
+2025-03-07 12:55:13 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 2
+2025-03-07 12:55:13 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 2
+2025-03-07 12:56:20 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19007
+2025-03-07 12:56:20 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19007
+2025-03-07 12:56:20 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 12:56:20 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 12:56:21 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19007
+2025-03-07 12:56:21 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19007
+2025-03-07 12:56:21 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 12:56:21 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 12:56:29 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 12:56:29 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 12:56:30 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 12:56:30 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 12:56:44 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 12:56:44 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 12:56:45 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 12:56:45 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 12:56:47 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 32514
+2025-03-07 12:56:47 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 32514
+2025-03-07 12:56:48 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 12:56:48 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 12:56:50 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 307
+2025-03-07 12:56:50 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 307
+2025-03-07 12:57:02 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 19
+2025-03-07 12:57:02 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 19
+2025-03-07 12:57:04 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&time_range=all HTTP/1.1" 200 15637
+2025-03-07 12:57:04 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&time_range=all HTTP/1.1" 200 15637
+2025-03-07 12:57:08 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 12:57:08 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 12:57:10 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E6%96%B0%E8%83%BD%E6%BA%90 HTTP/1.1" 200 329
+2025-03-07 12:57:10 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E6%96%B0%E8%83%BD%E6%BA%90 HTTP/1.1" 200 329
+2025-03-07 12:57:18 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 12:57:18 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 12:57:20 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E7%A7%91%E6%8A%80 HTTP/1.1" 200 285
+2025-03-07 12:57:20 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E7%A7%91%E6%8A%80 HTTP/1.1" 200 285
+2025-03-07 12:57:21 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E7%A7%91%E6%8A%80 HTTP/1.1" 200 285
+2025-03-07 12:57:21 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E7%A7%91%E6%8A%80 HTTP/1.1" 200 285
+2025-03-07 12:57:22 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 32578
+2025-03-07 12:57:22 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 32578
+2025-03-07 12:57:22 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 12:57:22 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 12:57:27 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E7%A7%91%E6%8A%80 HTTP/1.1" 200 285
+2025-03-07 12:57:27 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E7%A7%91%E6%8A%80 HTTP/1.1" 200 285
+2025-03-07 12:57:29 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 32578
+2025-03-07 12:57:29 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 32578
+2025-03-07 12:57:30 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 12:57:30 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 12:57:35 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19522
+2025-03-07 12:57:35 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19522
+2025-03-07 12:57:35 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 12:57:35 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 12:57:36 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/48/change/ HTTP/1.1" 200 13127
+2025-03-07 12:57:36 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/48/change/ HTTP/1.1" 200 13127
+2025-03-07 12:57:36 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 12:57:36 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 12:57:38 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19522
+2025-03-07 12:57:38 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19522
+2025-03-07 12:57:39 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/47/change/ HTTP/1.1" 200 13098
+2025-03-07 12:57:39 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/47/change/ HTTP/1.1" 200 13098
+2025-03-07 12:57:39 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 12:57:39 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 12:57:46 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19522
+2025-03-07 12:57:46 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19522
+2025-03-07 12:57:47 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/48/change/ HTTP/1.1" 200 13127
+2025-03-07 12:57:47 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/48/change/ HTTP/1.1" 200 13127
+2025-03-07 12:57:47 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 12:57:47 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 12:57:48 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19522
+2025-03-07 12:57:48 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19522
+2025-03-07 12:58:44 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 12:58:44 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 12:58:44 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 12:58:44 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 12:58:57 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 12:58:57 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 12:58:57 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 12:58:57 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 12:59:01 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 200 8978
+2025-03-07 12:59:01 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 200 8978
+2025-03-07 12:59:02 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 302 0
+2025-03-07 12:59:02 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 302 0
+2025-03-07 12:59:02 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19146
+2025-03-07 12:59:02 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19146
+2025-03-07 12:59:02 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 12:59:02 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 12:59:10 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 32514
+2025-03-07 12:59:10 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 32514
+2025-03-07 12:59:12 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 12:59:12 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 12:59:15 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&time_range=all HTTP/1.1" 200 17844
+2025-03-07 12:59:15 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&time_range=all HTTP/1.1" 200 17844
+2025-03-07 12:59:22 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 12:59:22 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 12:59:24 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 302
+2025-03-07 12:59:24 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 302
+2025-03-07 12:59:26 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 19
+2025-03-07 12:59:26 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 19
+2025-03-07 12:59:28 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&time_range=all HTTP/1.1" 200 15676
+2025-03-07 12:59:28 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&time_range=all HTTP/1.1" 200 15676
+2025-03-07 12:59:33 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19778
+2025-03-07 12:59:33 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19778
+2025-03-07 12:59:33 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 12:59:33 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 12:59:46 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/50/change/ HTTP/1.1" 200 13098
+2025-03-07 12:59:46 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/50/change/ HTTP/1.1" 200 13098
+2025-03-07 12:59:46 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 12:59:46 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 12:59:49 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19778
+2025-03-07 12:59:49 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19778
+2025-03-07 12:59:50 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/49/change/ HTTP/1.1" 200 13098
+2025-03-07 12:59:50 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/49/change/ HTTP/1.1" 200 13098
+2025-03-07 12:59:50 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 12:59:50 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 12:59:52 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19778
+2025-03-07 12:59:52 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19778
+2025-03-07 12:59:58 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/50/change/ HTTP/1.1" 200 13098
+2025-03-07 12:59:58 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/50/change/ HTTP/1.1" 200 13098
+2025-03-07 12:59:58 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 12:59:58 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:00:08 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19778
+2025-03-07 13:00:08 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19778
+2025-03-07 13:00:08 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/51/change/ HTTP/1.1" 200 13127
+2025-03-07 13:00:08 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/51/change/ HTTP/1.1" 200 13127
+2025-03-07 13:00:09 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:00:09 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:00:10 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19778
+2025-03-07 13:00:10 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19778
+2025-03-07 13:00:35 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 200 9116
+2025-03-07 13:00:35 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 200 9116
+2025-03-07 13:00:36 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 302 0
+2025-03-07 13:00:36 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 302 0
+2025-03-07 13:00:36 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19146
+2025-03-07 13:00:36 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19146
+2025-03-07 13:00:36 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:00:36 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:01:05 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 13:01:05 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 13:01:06 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:01:06 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:02:39 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 13:02:39 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 13:02:39 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:02:39 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:04:59 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\management\commands\fetch_news.py changed, reloading.
+2025-03-07 13:04:59 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\management\commands\fetch_news.py changed, reloading.
+2025-03-07 13:04:59 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:04:59 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:05:19 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 13:05:19 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 13:05:20 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:05:20 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:05:42 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\management\commands\fetch_news.py changed, reloading.
+2025-03-07 13:05:42 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\management\commands\fetch_news.py changed, reloading.
+2025-03-07 13:05:43 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:05:43 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:07:58 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\management\commands\fetch_news.py changed, reloading.
+2025-03-07 13:07:58 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\management\commands\fetch_news.py changed, reloading.
+2025-03-07 13:07:58 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:07:58 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:08:06 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\management\commands\fetch_news.py changed, reloading.
+2025-03-07 13:08:06 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\management\commands\fetch_news.py changed, reloading.
+2025-03-07 13:08:06 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:08:06 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:08:14 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 13:08:14 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 13:08:15 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:08:15 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:08:30 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 13:08:30 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 13:08:31 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:08:31 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:08:46 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 32514
+2025-03-07 13:08:46 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 32514
+2025-03-07 13:08:47 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 13:08:47 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 13:08:49 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 298
+2025-03-07 13:08:49 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 298
+2025-03-07 13:08:51 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 19
+2025-03-07 13:08:51 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 19
+2025-03-07 13:09:02 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&time_range=week&fetch_new=on HTTP/1.1" 200 17963
+2025-03-07 13:09:02 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&time_range=week&fetch_new=on HTTP/1.1" 200 17963
+2025-03-07 13:10:48 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 13:10:48 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 13:10:48 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:10:48 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:11:13 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 13:11:13 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 13:11:14 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:11:14 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:11:22 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 32578
+2025-03-07 13:11:22 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 32578
+2025-03-07 13:11:23 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 13:11:23 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 13:11:28 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19522
+2025-03-07 13:11:28 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19522
+2025-03-07 13:11:28 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:11:28 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:11:31 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/52/change/ HTTP/1.1" 200 13098
+2025-03-07 13:11:31 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/52/change/ HTTP/1.1" 200 13098
+2025-03-07 13:11:31 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:11:31 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:11:33 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19522
+2025-03-07 13:11:33 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19522
+2025-03-07 13:11:44 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/53/change/ HTTP/1.1" 200 13127
+2025-03-07 13:11:44 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/53/change/ HTTP/1.1" 200 13127
+2025-03-07 13:11:44 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:11:44 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:11:45 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19522
+2025-03-07 13:11:45 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19522
+2025-03-07 13:11:50 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/52/change/ HTTP/1.1" 200 13098
+2025-03-07 13:11:50 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/52/change/ HTTP/1.1" 200 13098
+2025-03-07 13:11:50 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:11:50 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:11:52 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19522
+2025-03-07 13:11:52 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19522
+2025-03-07 13:11:53 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/52/change/ HTTP/1.1" 200 13098
+2025-03-07 13:11:53 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/52/change/ HTTP/1.1" 200 13098
+2025-03-07 13:11:53 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:11:53 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:12:00 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19522
+2025-03-07 13:12:00 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19522
+2025-03-07 13:12:02 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 200 8838
+2025-03-07 13:12:02 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 200 8838
+2025-03-07 13:12:03 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 302 0
+2025-03-07 13:12:03 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 302 0
+2025-03-07 13:12:03 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19405
+2025-03-07 13:12:03 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19405
+2025-03-07 13:12:03 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:12:03 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:12:05 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 32548
+2025-03-07 13:12:05 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 32548
+2025-03-07 13:12:06 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 13:12:06 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 13:12:07 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 338
+2025-03-07 13:12:07 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 338
+2025-03-07 13:12:12 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 19
+2025-03-07 13:12:12 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 19
+2025-03-07 13:12:19 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 338
+2025-03-07 13:12:19 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 338
+2025-03-07 13:12:42 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&time_range=all HTTP/1.1" 200 15680
+2025-03-07 13:12:42 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&time_range=all HTTP/1.1" 200 15680
+2025-03-07 13:12:48 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&keywords=AI&time_range=month&fetch_new=on HTTP/1.1" 200 16059
+2025-03-07 13:12:48 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&keywords=AI&time_range=month&fetch_new=on HTTP/1.1" 200 16059
+2025-03-07 13:12:56 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 20555
+2025-03-07 13:12:56 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 20555
+2025-03-07 13:12:56 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:12:56 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:12:57 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/58/change/ HTTP/1.1" 200 13127
+2025-03-07 13:12:57 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/58/change/ HTTP/1.1" 200 13127
+2025-03-07 13:12:57 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:12:57 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:12:59 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 20555
+2025-03-07 13:12:59 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 20555
+2025-03-07 13:13:00 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/57/change/ HTTP/1.1" 200 13127
+2025-03-07 13:13:00 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/57/change/ HTTP/1.1" 200 13127
+2025-03-07 13:13:00 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:13:00 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:13:02 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 20555
+2025-03-07 13:13:02 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 20555
+2025-03-07 13:13:03 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/55/change/ HTTP/1.1" 200 13127
+2025-03-07 13:13:03 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/55/change/ HTTP/1.1" 200 13127
+2025-03-07 13:13:03 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:13:03 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:13:04 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 20555
+2025-03-07 13:13:04 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 20555
+2025-03-07 13:13:06 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/53/change/ HTTP/1.1" 200 13127
+2025-03-07 13:13:06 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/53/change/ HTTP/1.1" 200 13127
+2025-03-07 13:13:06 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:13:06 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:13:08 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 20555
+2025-03-07 13:13:08 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 20555
+2025-03-07 13:14:12 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 200 9536
+2025-03-07 13:14:12 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 200 9536
+2025-03-07 13:14:13 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 302 0
+2025-03-07 13:14:13 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 302 0
+2025-03-07 13:14:13 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19146
+2025-03-07 13:14:13 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19146
+2025-03-07 13:14:13 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:14:13 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:14:23 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 13:14:23 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 13:14:24 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:14:24 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:14:27 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 13:14:27 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 13:14:28 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:14:28 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:14:38 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 32097
+2025-03-07 13:14:38 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 32097
+2025-03-07 13:14:38 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 13:14:38 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 13:14:40 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 294
+2025-03-07 13:14:40 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 294
+2025-03-07 13:14:42 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 19
+2025-03-07 13:14:42 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 19
+2025-03-07 13:14:49 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&time_range=all HTTP/1.1" 200 15637
+2025-03-07 13:14:49 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&time_range=all HTTP/1.1" 200 15637
+2025-03-07 13:14:51 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 32161
+2025-03-07 13:14:51 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 32161
+2025-03-07 13:15:01 [INFO    ] (basehttp.log_message) "GET /?industry=&time_range=month&fetch_new=on HTTP/1.1" 200 32289
+2025-03-07 13:15:01 [INFO    ] (basehttp.log_message) "GET /?industry=&time_range=month&fetch_new=on HTTP/1.1" 200 32289
+2025-03-07 13:15:13 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 18246
+2025-03-07 13:15:13 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 18246
+2025-03-07 13:15:13 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:15:13 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:15:14 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/31/change/ HTTP/1.1" 200 18898
+2025-03-07 13:15:14 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/31/change/ HTTP/1.1" 200 18898
+2025-03-07 13:15:14 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:15:14 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:15:23 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 18246
+2025-03-07 13:15:23 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 18246
+2025-03-07 13:15:37 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/21/change/ HTTP/1.1" 200 18853
+2025-03-07 13:15:37 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/21/change/ HTTP/1.1" 200 18853
+2025-03-07 13:15:37 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:15:37 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:15:45 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 18246
+2025-03-07 13:15:45 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 18246
+2025-03-07 13:15:56 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/newsarticle/ HTTP/1.1" 200 16016
+2025-03-07 13:15:56 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/newsarticle/ HTTP/1.1" 200 16016
+2025-03-07 13:15:59 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/newsarticle/ HTTP/1.1" 302 0
+2025-03-07 13:15:59 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/newsarticle/ HTTP/1.1" 302 0
+2025-03-07 13:15:59 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 8950
+2025-03-07 13:15:59 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 8950
+2025-03-07 13:15:59 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:15:59 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:16:02 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 15683
+2025-03-07 13:16:02 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 15683
+2025-03-07 13:16:02 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 13:16:02 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 13:16:05 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 294
+2025-03-07 13:16:05 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 294
+2025-03-07 13:16:08 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 19
+2025-03-07 13:16:08 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 19
+2025-03-07 13:16:11 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19522
+2025-03-07 13:16:11 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19522
+2025-03-07 13:16:11 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:16:11 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:17:11 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 13:17:11 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 13:17:12 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:17:12 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:18:18 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 200 8978
+2025-03-07 13:18:18 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 200 8978
+2025-03-07 13:18:19 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 302 0
+2025-03-07 13:18:19 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 302 0
+2025-03-07 13:18:19 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19146
+2025-03-07 13:18:19 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19146
+2025-03-07 13:18:19 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:18:19 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:18:21 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 15619
+2025-03-07 13:18:21 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 15619
+2025-03-07 13:18:22 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 13:18:22 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 13:18:24 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 326
+2025-03-07 13:18:24 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 326
+2025-03-07 13:18:26 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 19
+2025-03-07 13:18:26 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 19
+2025-03-07 13:18:33 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&time_range=month&fetch_new=on HTTP/1.1" 200 27338
+2025-03-07 13:18:33 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&time_range=month&fetch_new=on HTTP/1.1" 200 27338
+2025-03-07 13:18:39 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19522
+2025-03-07 13:18:39 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19522
+2025-03-07 13:18:39 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:18:39 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:18:45 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/61/change/ HTTP/1.1" 200 13098
+2025-03-07 13:18:45 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/61/change/ HTTP/1.1" 200 13098
+2025-03-07 13:18:45 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:18:45 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:18:46 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19522
+2025-03-07 13:18:46 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19522
+2025-03-07 13:19:06 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 14008
+2025-03-07 13:19:06 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 14008
+2025-03-07 13:19:06 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:19:06 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:19:07 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/41/change/ HTTP/1.1" 200 18898
+2025-03-07 13:19:07 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/41/change/ HTTP/1.1" 200 18898
+2025-03-07 13:19:07 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:19:07 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:19:52 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 13:19:52 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 13:19:53 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:19:53 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:19:57 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 13:19:57 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 13:19:58 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:19:58 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:21:36 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:21:36 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:21:36 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:21:36 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:21:58 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:21:58 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:21:59 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:21:59 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:22:18 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 14008
+2025-03-07 13:22:18 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 14008
+2025-03-07 13:22:21 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/newsarticle/ HTTP/1.1" 200 13436
+2025-03-07 13:22:21 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/newsarticle/ HTTP/1.1" 200 13436
+2025-03-07 13:22:23 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/newsarticle/ HTTP/1.1" 302 0
+2025-03-07 13:22:23 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/newsarticle/ HTTP/1.1" 302 0
+2025-03-07 13:22:23 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 8950
+2025-03-07 13:22:23 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 8950
+2025-03-07 13:22:23 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:22:23 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:22:24 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19522
+2025-03-07 13:22:24 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19522
+2025-03-07 13:22:24 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:22:24 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:22:27 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 200 8978
+2025-03-07 13:22:27 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 200 8978
+2025-03-07 13:22:28 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 302 0
+2025-03-07 13:22:28 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 302 0
+2025-03-07 13:22:28 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19146
+2025-03-07 13:22:28 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19146
+2025-03-07 13:22:28 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:22:28 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:22:28 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/industry/ HTTP/1.1" 200 11387
+2025-03-07 13:22:28 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/industry/ HTTP/1.1" 200 11387
+2025-03-07 13:22:28 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:22:28 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:22:36 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 15619
+2025-03-07 13:22:36 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 15619
+2025-03-07 13:22:37 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 13:22:37 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 13:22:39 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 298
+2025-03-07 13:22:39 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 298
+2025-03-07 13:22:42 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 19
+2025-03-07 13:22:42 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 19
+2025-03-07 13:22:47 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&time_range=month&fetch_new=on HTTP/1.1" 200 27338
+2025-03-07 13:22:47 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&time_range=month&fetch_new=on HTTP/1.1" 200 27338
+2025-03-07 13:22:53 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 14008
+2025-03-07 13:22:53 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 14008
+2025-03-07 13:22:53 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:22:53 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:22:57 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/51/change/ HTTP/1.1" 200 18898
+2025-03-07 13:22:57 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/51/change/ HTTP/1.1" 200 18898
+2025-03-07 13:22:57 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:22:57 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:23:22 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19522
+2025-03-07 13:23:22 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19522
+2025-03-07 13:23:22 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:23:22 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:23:37 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 14008
+2025-03-07 13:23:37 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 14008
+2025-03-07 13:23:37 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:23:37 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:23:38 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/55/change/ HTTP/1.1" 200 18872
+2025-03-07 13:23:38 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/55/change/ HTTP/1.1" 200 18872
+2025-03-07 13:23:38 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:23:38 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:25:08 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:25:08 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:25:09 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:25:09 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:25:43 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:25:43 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:25:44 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:25:44 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:25:45 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 14008
+2025-03-07 13:25:45 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 14008
+2025-03-07 13:25:45 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:25:45 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:25:48 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/newsarticle/ HTTP/1.1" 200 13443
+2025-03-07 13:25:48 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/newsarticle/ HTTP/1.1" 200 13443
+2025-03-07 13:25:50 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/newsarticle/ HTTP/1.1" 302 0
+2025-03-07 13:25:50 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/newsarticle/ HTTP/1.1" 302 0
+2025-03-07 13:25:50 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 8950
+2025-03-07 13:25:50 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 8950
+2025-03-07 13:25:50 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:25:50 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:25:51 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19522
+2025-03-07 13:25:51 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 19522
+2025-03-07 13:25:51 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:25:51 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:25:59 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 200 9566
+2025-03-07 13:25:59 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 200 9566
+2025-03-07 13:26:00 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 302 0
+2025-03-07 13:26:00 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 302 0
+2025-03-07 13:26:00 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 18054
+2025-03-07 13:26:00 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 18054
+2025-03-07 13:26:00 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:26:00 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:26:04 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 15427
+2025-03-07 13:26:04 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 15427
+2025-03-07 13:26:05 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 13:26:05 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 13:26:07 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 298
+2025-03-07 13:26:07 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 298
+2025-03-07 13:26:08 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 19
+2025-03-07 13:26:08 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 19
+2025-03-07 13:26:14 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&time_range=week&fetch_new=on HTTP/1.1" 200 27146
+2025-03-07 13:26:14 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&time_range=week&fetch_new=on HTTP/1.1" 200 27146
+2025-03-07 13:26:22 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 14008
+2025-03-07 13:26:22 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 14008
+2025-03-07 13:26:22 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:26:22 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:26:22 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/61/change/ HTTP/1.1" 200 18734
+2025-03-07 13:26:22 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/61/change/ HTTP/1.1" 200 18734
+2025-03-07 13:26:22 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:26:22 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:27:33 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\management\commands\fetch_news.py changed, reloading.
+2025-03-07 13:27:33 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\management\commands\fetch_news.py changed, reloading.
+2025-03-07 13:27:34 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:27:34 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:28:13 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\management\commands\fetch_news.py changed, reloading.
+2025-03-07 13:28:13 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\management\commands\fetch_news.py changed, reloading.
+2025-03-07 13:28:13 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:28:13 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:28:43 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 14008
+2025-03-07 13:28:43 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 14008
+2025-03-07 13:28:43 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:28:43 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:28:46 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/newsarticle/ HTTP/1.1" 200 13454
+2025-03-07 13:28:46 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/newsarticle/ HTTP/1.1" 200 13454
+2025-03-07 13:28:48 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/newsarticle/ HTTP/1.1" 302 0
+2025-03-07 13:28:48 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/newsarticle/ HTTP/1.1" 302 0
+2025-03-07 13:28:48 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 8950
+2025-03-07 13:28:48 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 8950
+2025-03-07 13:28:48 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:28:48 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:28:49 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 18430
+2025-03-07 13:28:49 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 18430
+2025-03-07 13:28:49 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:28:49 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:28:52 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 200 8978
+2025-03-07 13:28:52 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 200 8978
+2025-03-07 13:28:53 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 302 0
+2025-03-07 13:28:53 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 302 0
+2025-03-07 13:28:53 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 18054
+2025-03-07 13:28:53 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 18054
+2025-03-07 13:28:53 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:28:53 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:30:16 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:30:16 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:30:16 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:30:16 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:30:27 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:30:27 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:30:27 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:30:27 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:30:55 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:30:55 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:30:56 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:30:56 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:31:10 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 8807
+2025-03-07 13:31:10 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 8807
+2025-03-07 13:31:10 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:31:10 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:31:13 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 15427
+2025-03-07 13:31:13 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 15427
+2025-03-07 13:31:14 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 13:31:14 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 13:31:15 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 302
+2025-03-07 13:31:15 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 302
+2025-03-07 13:31:17 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 19
+2025-03-07 13:31:17 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 19
+2025-03-07 13:31:22 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&time_range=today&fetch_new=on HTTP/1.1" 200 15742
+2025-03-07 13:31:22 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&time_range=today&fetch_new=on HTTP/1.1" 200 15742
+2025-03-07 13:31:29 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 29739
+2025-03-07 13:31:29 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 29739
+2025-03-07 13:31:34 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 14008
+2025-03-07 13:31:34 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 14008
+2025-03-07 13:31:34 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:31:34 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:31:36 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/71/change/ HTTP/1.1" 200 18650
+2025-03-07 13:31:36 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/71/change/ HTTP/1.1" 200 18650
+2025-03-07 13:31:36 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:31:36 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:32:30 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 14008
+2025-03-07 13:32:30 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 14008
+2025-03-07 13:32:30 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:32:30 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:33:29 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\management\commands\fetch_news.py changed, reloading.
+2025-03-07 13:33:29 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\management\commands\fetch_news.py changed, reloading.
+2025-03-07 13:33:30 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:33:30 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:33:52 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/77/change/ HTTP/1.1" 200 18493
+2025-03-07 13:33:52 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/77/change/ HTTP/1.1" 200 18493
+2025-03-07 13:33:52 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:33:52 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:37:37 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:37:37 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:37:37 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:37:37 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:39:58 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:39:58 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:39:59 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:39:59 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:41:18 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:41:18 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:41:19 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:41:19 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:41:22 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 14008
+2025-03-07 13:41:22 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 14008
+2025-03-07 13:41:22 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:41:22 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:41:24 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/newsarticle/ HTTP/1.1" 200 11766
+2025-03-07 13:41:24 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/newsarticle/ HTTP/1.1" 200 11766
+2025-03-07 13:41:26 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/newsarticle/ HTTP/1.1" 302 0
+2025-03-07 13:41:26 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/newsarticle/ HTTP/1.1" 302 0
+2025-03-07 13:41:26 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 8950
+2025-03-07 13:41:26 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 8950
+2025-03-07 13:41:26 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:41:26 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:41:27 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 17915
+2025-03-07 13:41:27 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 17915
+2025-03-07 13:41:27 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:41:27 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:41:30 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 13:41:30 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 13:41:31 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 15427
+2025-03-07 13:41:31 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 15427
+2025-03-07 13:41:31 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 13:41:31 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 13:41:33 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 326
+2025-03-07 13:41:33 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 326
+2025-03-07 13:41:35 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 19
+2025-03-07 13:41:35 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 19
+2025-03-07 13:41:39 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&time_range=today&fetch_new=on HTTP/1.1" 200 15742
+2025-03-07 13:41:39 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&time_range=today&fetch_new=on HTTP/1.1" 200 15742
+2025-03-07 13:41:44 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 14008
+2025-03-07 13:41:44 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 14008
+2025-03-07 13:41:44 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:41:44 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:41:44 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/81/change/ HTTP/1.1" 200 18650
+2025-03-07 13:41:44 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/81/change/ HTTP/1.1" 200 18650
+2025-03-07 13:41:44 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:41:44 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:43:19 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:43:19 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:43:19 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:43:19 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:43:23 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 14008
+2025-03-07 13:43:23 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 14008
+2025-03-07 13:43:23 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:43:23 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:43:25 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/newsarticle/ HTTP/1.1" 200 11766
+2025-03-07 13:43:25 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/newsarticle/ HTTP/1.1" 200 11766
+2025-03-07 13:43:27 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/newsarticle/ HTTP/1.1" 302 0
+2025-03-07 13:43:27 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/newsarticle/ HTTP/1.1" 302 0
+2025-03-07 13:43:27 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 8950
+2025-03-07 13:43:27 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 8950
+2025-03-07 13:43:27 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:43:27 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:43:29 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 15427
+2025-03-07 13:43:29 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 15427
+2025-03-07 13:43:30 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 13:43:30 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 13:43:31 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 326
+2025-03-07 13:43:31 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 326
+2025-03-07 13:43:33 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=w96&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 2
+2025-03-07 13:43:33 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=w96&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 2
+2025-03-07 13:43:33 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=w&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 326
+2025-03-07 13:43:33 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=w&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 326
+2025-03-07 13:43:34 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 326
+2025-03-07 13:43:34 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 326
+2025-03-07 13:43:34 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=%E3%84%8A&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 326
+2025-03-07 13:43:34 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=%E3%84%8A&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 326
+2025-03-07 13:43:35 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=%E5%8F%B0&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 326
+2025-03-07 13:43:35 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=%E5%8F%B0&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 326
+2025-03-07 13:43:35 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 326
+2025-03-07 13:43:35 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 326
+2025-03-07 13:43:36 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 19
+2025-03-07 13:43:36 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 19
+2025-03-07 13:43:41 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 326
+2025-03-07 13:43:41 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 326
+2025-03-07 13:43:41 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 326
+2025-03-07 13:43:41 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 326
+2025-03-07 13:43:45 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=AI&time_range=all HTTP/1.1" 200 15436
+2025-03-07 13:43:45 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=AI&time_range=all HTTP/1.1" 200 15436
+2025-03-07 13:43:50 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=AI&time_range=today&fetch_new=on HTTP/1.1" 200 15747
+2025-03-07 13:43:50 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=AI&time_range=today&fetch_new=on HTTP/1.1" 200 15747
+2025-03-07 13:44:06 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 15427
+2025-03-07 13:44:06 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 15427
+2025-03-07 13:44:07 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 13:44:07 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 13:44:09 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 326
+2025-03-07 13:44:09 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 326
+2025-03-07 13:44:11 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 19
+2025-03-07 13:44:11 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 19
+2025-03-07 13:45:17 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\management\commands\fetch_news.py changed, reloading.
+2025-03-07 13:45:17 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\management\commands\fetch_news.py changed, reloading.
+2025-03-07 13:45:18 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:45:18 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:45:24 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 15427
+2025-03-07 13:45:24 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 15427
+2025-03-07 13:45:25 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 13:45:25 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 13:45:32 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 292
+2025-03-07 13:45:32 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 292
+2025-03-07 13:45:35 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 19
+2025-03-07 13:45:35 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 19
+2025-03-07 13:45:37 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&time_range=all HTTP/1.1" 200 15445
+2025-03-07 13:45:37 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&time_range=all HTTP/1.1" 200 15445
+2025-03-07 13:45:43 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&time_range=week&fetch_new=on HTTP/1.1" 200 15756
+2025-03-07 13:45:43 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&time_range=week&fetch_new=on HTTP/1.1" 200 15756
+2025-03-07 13:46:39 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 13:46:39 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 13:46:39 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:46:39 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:46:44 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 15427
+2025-03-07 13:46:44 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 15427
+2025-03-07 13:46:44 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 13:46:44 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 13:46:46 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 326
+2025-03-07 13:46:46 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 326
+2025-03-07 13:46:48 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 19
+2025-03-07 13:46:48 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 19
+2025-03-07 13:46:54 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&time_range=week&fetch_new=on HTTP/1.1" 200 15756
+2025-03-07 13:46:54 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&time_range=week&fetch_new=on HTTP/1.1" 200 15756
+2025-03-07 13:46:58 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 15427
+2025-03-07 13:46:58 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 15427
+2025-03-07 13:47:19 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 13:47:19 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 13:47:19 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:47:19 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:47:36 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:47:36 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:47:37 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:47:37 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:47:42 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 15427
+2025-03-07 13:47:42 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 15427
+2025-03-07 13:47:43 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 13:47:43 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 13:47:45 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 311
+2025-03-07 13:47:45 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 311
+2025-03-07 13:47:47 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 19
+2025-03-07 13:47:47 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 19
+2025-03-07 13:47:53 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&time_range=today&fetch_new=on HTTP/1.1" 200 15742
+2025-03-07 13:47:53 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&time_range=today&fetch_new=on HTTP/1.1" 200 15742
+2025-03-07 13:48:13 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 29739
+2025-03-07 13:48:13 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 29739
+2025-03-07 13:48:16 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 14010
+2025-03-07 13:48:16 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 14010
+2025-03-07 13:48:16 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:48:16 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:48:17 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/91/change/ HTTP/1.1" 200 18650
+2025-03-07 13:48:17 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/91/change/ HTTP/1.1" 200 18650
+2025-03-07 13:48:17 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:48:17 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:50:00 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 13:50:00 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 13:50:00 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:50:00 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:50:13 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:50:13 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:50:13 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:50:13 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:50:21 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:50:21 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:50:21 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:50:21 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:50:30 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:50:30 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:50:30 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:50:30 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:50:53 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 13:50:53 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 13:50:54 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:50:54 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:51:03 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 14010
+2025-03-07 13:51:03 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 14010
+2025-03-07 13:51:03 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:51:03 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:51:06 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/newsarticle/ HTTP/1.1" 200 11768
+2025-03-07 13:51:06 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/newsarticle/ HTTP/1.1" 200 11768
+2025-03-07 13:51:08 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/newsarticle/ HTTP/1.1" 302 0
+2025-03-07 13:51:08 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/newsarticle/ HTTP/1.1" 302 0
+2025-03-07 13:51:08 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 8950
+2025-03-07 13:51:08 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 8950
+2025-03-07 13:51:08 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:51:08 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:51:09 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 17915
+2025-03-07 13:51:09 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 17915
+2025-03-07 13:51:09 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:51:09 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:51:11 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 8807
+2025-03-07 13:51:11 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 8807
+2025-03-07 13:51:11 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:51:11 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:51:13 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 15427
+2025-03-07 13:51:13 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 15427
+2025-03-07 13:51:19 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 13:51:19 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 13:51:21 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 308
+2025-03-07 13:51:21 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 308
+2025-03-07 13:51:22 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 19
+2025-03-07 13:51:22 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 19
+2025-03-07 13:51:27 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&time_range=today&fetch_new=on HTTP/1.1" 200 15742
+2025-03-07 13:51:27 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&time_range=today&fetch_new=on HTTP/1.1" 200 15742
+2025-03-07 13:51:28 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 29739
+2025-03-07 13:51:28 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 29739
+2025-03-07 13:51:32 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 14028
+2025-03-07 13:51:32 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 14028
+2025-03-07 13:51:32 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:51:32 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:51:33 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/101/change/ HTTP/1.1" 200 18652
+2025-03-07 13:51:33 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/101/change/ HTTP/1.1" 200 18652
+2025-03-07 13:51:33 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:51:33 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:54:13 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\management\commands\fetch_news.py changed, reloading.
+2025-03-07 13:54:13 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\management\commands\fetch_news.py changed, reloading.
+2025-03-07 13:54:13 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:54:13 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:54:31 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:54:31 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:54:32 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:54:32 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:54:33 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\management\commands\fetch_news.py changed, reloading.
+2025-03-07 13:54:33 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\management\commands\fetch_news.py changed, reloading.
+2025-03-07 13:54:34 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:54:34 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:54:49 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:54:49 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:54:50 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:54:50 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:55:22 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:55:22 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:55:22 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:55:22 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:55:30 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:55:30 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:55:31 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:55:31 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:55:36 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:55:36 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\modelCore\models.py changed, reloading.
+2025-03-07 13:55:37 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:55:37 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:56:59 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 13:56:59 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 13:57:00 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:57:00 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:58:39 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 13:58:39 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 13:58:40 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:58:40 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:58:41 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 13:58:41 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 13:58:41 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:58:41 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 13:59:42 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 14028
+2025-03-07 13:59:42 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 14028
+2025-03-07 13:59:42 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:59:42 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:59:45 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/newsarticle/ HTTP/1.1" 200 10979
+2025-03-07 13:59:45 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/newsarticle/ HTTP/1.1" 200 10979
+2025-03-07 13:59:46 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/newsarticle/ HTTP/1.1" 302 0
+2025-03-07 13:59:46 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/newsarticle/ HTTP/1.1" 302 0
+2025-03-07 13:59:46 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 8950
+2025-03-07 13:59:46 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 8950
+2025-03-07 13:59:46 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:59:46 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 13:59:48 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 15427
+2025-03-07 13:59:48 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 15427
+2025-03-07 13:59:49 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 13:59:49 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 13:59:51 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 332
+2025-03-07 13:59:51 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 332
+2025-03-07 13:59:52 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=A&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 332
+2025-03-07 13:59:52 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=A&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 332
+2025-03-07 13:59:52 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 19
+2025-03-07 13:59:52 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 19
+2025-03-07 13:59:57 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&time_range=today&fetch_new=on HTTP/1.1" 200 27212
+2025-03-07 13:59:57 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&time_range=today&fetch_new=on HTTP/1.1" 200 27212
+2025-03-07 14:00:02 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 14110
+2025-03-07 14:00:02 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 14110
+2025-03-07 14:00:02 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 14:00:02 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 14:00:03 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/111/change/ HTTP/1.1" 200 18597
+2025-03-07 14:00:03 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/111/change/ HTTP/1.1" 200 18597
+2025-03-07 14:00:03 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 14:00:03 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 14:00:34 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/industry/add/?_to_field=id&_popup=1 HTTP/1.1" 200 5509
+2025-03-07 14:00:34 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/industry/add/?_to_field=id&_popup=1 HTTP/1.1" 200 5509
+2025-03-07 14:00:34 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 14:00:34 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 14:01:01 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/industry/add/?_to_field=id&_popup=1 HTTP/1.1" 200 5509
+2025-03-07 14:01:01 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/industry/add/?_to_field=id&_popup=1 HTTP/1.1" 200 5509
+2025-03-07 14:01:01 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 14:01:01 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 14:01:52 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&time_range=today HTTP/1.1" 200 15445
+2025-03-07 14:01:52 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&time_range=today HTTP/1.1" 200 15445
+2025-03-07 14:02:02 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/industry/add/?_to_field=id&_popup=1 HTTP/1.1" 200 5509
+2025-03-07 14:02:02 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/industry/add/?_to_field=id&_popup=1 HTTP/1.1" 200 5509
+2025-03-07 14:02:02 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 14:02:02 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 14:02:07 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/industry/add/?_to_field=id&_popup=1 HTTP/1.1" 200 5709
+2025-03-07 14:02:07 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/industry/add/?_to_field=id&_popup=1 HTTP/1.1" 200 5709
+2025-03-07 14:02:07 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 14:02:07 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 14:04:36 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 29805
+2025-03-07 14:04:36 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 29805
+2025-03-07 14:04:43 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:04:43 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:04:45 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 332
+2025-03-07 14:04:45 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 332
+2025-03-07 14:04:49 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 19
+2025-03-07 14:04:49 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 19
+2025-03-07 14:04:51 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&time_range=all HTTP/1.1" 200 26915
+2025-03-07 14:04:51 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=AI&time_range=all HTTP/1.1" 200 26915
+2025-03-07 14:05:16 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:05:16 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:05:21 [INFO    ] (basehttp.log_message) "GET /?industry=%E7%94%9F%E6%8A%80&keywords=&keywords=&keywords=AI&time_range=all HTTP/1.1" 200 15445
+2025-03-07 14:05:21 [INFO    ] (basehttp.log_message) "GET /?industry=%E7%94%9F%E6%8A%80&keywords=&keywords=&keywords=AI&time_range=all HTTP/1.1" 200 15445
+2025-03-07 14:07:04 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 17915
+2025-03-07 14:07:04 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 17915
+2025-03-07 14:07:04 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 14:07:04 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 14:07:07 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/add/ HTTP/1.1" 200 12917
+2025-03-07 14:07:07 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/add/ HTTP/1.1" 200 12917
+2025-03-07 14:07:07 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 14:07:07 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 14:07:11 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/add/ HTTP/1.1" 302 0
+2025-03-07 14:07:11 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/add/ HTTP/1.1" 302 0
+2025-03-07 14:07:11 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 18382
+2025-03-07 14:07:11 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 18382
+2025-03-07 14:07:11 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 14:07:11 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 14:07:13 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 14110
+2025-03-07 14:07:13 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/ HTTP/1.1" 200 14110
+2025-03-07 14:07:13 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 14:07:13 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 14:07:14 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/111/change/ HTTP/1.1" 200 18633
+2025-03-07 14:07:14 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/newsarticle/111/change/ HTTP/1.1" 200 18633
+2025-03-07 14:07:14 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 14:07:14 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 14:07:23 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 18178
+2025-03-07 14:07:23 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 18178
+2025-03-07 14:07:23 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 14:07:23 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 14:07:26 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 200 8842
+2025-03-07 14:07:26 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 200 8842
+2025-03-07 14:07:27 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 302 0
+2025-03-07 14:07:27 [INFO    ] (basehttp.log_message) "POST /admin/modelCore/keyword/ HTTP/1.1" 302 0
+2025-03-07 14:07:27 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 18054
+2025-03-07 14:07:27 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 18054
+2025-03-07 14:07:27 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 14:07:27 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 14:08:04 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:08:04 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:08:06 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E7%A7%91%E6%8A%80 HTTP/1.1" 200 318
+2025-03-07 14:08:06 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E7%A7%91%E6%8A%80 HTTP/1.1" 200 318
+2025-03-07 14:08:08 [INFO    ] (basehttp.log_message) "GET /?industry=%E7%A7%91%E6%8A%80&keywords=&keywords=AI&time_range=all HTTP/1.1" 200 18519
+2025-03-07 14:08:08 [INFO    ] (basehttp.log_message) "GET /?industry=%E7%A7%91%E6%8A%80&keywords=&keywords=AI&time_range=all HTTP/1.1" 200 18519
+2025-03-07 14:08:18 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:08:18 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:08:21 [INFO    ] (basehttp.log_message) "GET /?industry=%E6%96%B0%E8%83%BD%E6%BA%90&keywords=&keywords=&keywords=AI&time_range=all HTTP/1.1" 200 15445
+2025-03-07 14:08:21 [INFO    ] (basehttp.log_message) "GET /?industry=%E6%96%B0%E8%83%BD%E6%BA%90&keywords=&keywords=&keywords=AI&time_range=all HTTP/1.1" 200 15445
+2025-03-07 14:08:24 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:08:24 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:08:26 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=&keywords=AI&time_range=all HTTP/1.1" 200 26915
+2025-03-07 14:08:26 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=&keywords=AI&time_range=all HTTP/1.1" 200 26915
+2025-03-07 14:08:45 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:08:45 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:09:48 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E6%96%B0%E8%83%BD%E6%BA%90 HTTP/1.1" 200 318
+2025-03-07 14:09:48 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E6%96%B0%E8%83%BD%E6%BA%90 HTTP/1.1" 200 318
+2025-03-07 14:09:49 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E6%96%B0%E8%83%BD%E6%BA%90 HTTP/1.1" 200 318
+2025-03-07 14:09:49 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E6%96%B0%E8%83%BD%E6%BA%90 HTTP/1.1" 200 318
+2025-03-07 14:09:50 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E6%96%B0%E8%83%BD%E6%BA%90 HTTP/1.1" 200 318
+2025-03-07 14:09:50 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E6%96%B0%E8%83%BD%E6%BA%90 HTTP/1.1" 200 318
+2025-03-07 14:09:50 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:09:50 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:09:55 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E7%94%9F%E6%8A%80 HTTP/1.1" 200 318
+2025-03-07 14:09:55 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E7%94%9F%E6%8A%80 HTTP/1.1" 200 318
+2025-03-07 14:09:56 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E7%94%9F%E6%8A%80 HTTP/1.1" 200 318
+2025-03-07 14:09:56 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E7%94%9F%E6%8A%80 HTTP/1.1" 200 318
+2025-03-07 14:09:57 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:09:57 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:11:08 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 14:11:08 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 14:11:09 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 14:11:09 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 14:11:23 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 14:11:23 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 14:11:23 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 14:11:23 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 14:11:25 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 14:11:25 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\views.py changed, reloading.
+2025-03-07 14:11:25 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 14:11:25 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 14:11:26 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 29805
+2025-03-07 14:11:26 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 29805
+2025-03-07 14:11:28 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:11:28 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:11:30 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E7%94%9F%E6%8A%80 HTTP/1.1" 200 347
+2025-03-07 14:11:30 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E7%94%9F%E6%8A%80 HTTP/1.1" 200 347
+2025-03-07 14:11:32 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E7%94%9F%E6%8A%80 HTTP/1.1" 200 19
+2025-03-07 14:11:32 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E7%94%9F%E6%8A%80 HTTP/1.1" 200 19
+2025-03-07 14:11:34 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:11:34 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:11:51 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E7%A7%91%E6%8A%80 HTTP/1.1" 200 321
+2025-03-07 14:11:51 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E7%A7%91%E6%8A%80 HTTP/1.1" 200 321
+2025-03-07 14:11:52 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:11:52 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:12:19 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E7%94%9F%E6%8A%80 HTTP/1.1" 200 347
+2025-03-07 14:12:19 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E7%94%9F%E6%8A%80 HTTP/1.1" 200 347
+2025-03-07 14:12:47 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 17915
+2025-03-07 14:12:47 [INFO    ] (basehttp.log_message) "GET /admin/modelCore/keyword/ HTTP/1.1" 200 17915
+2025-03-07 14:12:47 [INFO    ] (basehttp.log_message) "GET /static/admin/css/base.css HTTP/1.1" 304 0
+2025-03-07 14:12:47 [INFO    ] (basehttp.log_message) "GET /static/admin/css/base.css HTTP/1.1" 304 0
+2025-03-07 14:12:47 [INFO    ] (basehttp.log_message) "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+2025-03-07 14:12:47 [INFO    ] (basehttp.log_message) "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+2025-03-07 14:12:47 [INFO    ] (basehttp.log_message) "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+2025-03-07 14:12:47 [INFO    ] (basehttp.log_message) "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+2025-03-07 14:12:47 [INFO    ] (basehttp.log_message) "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+2025-03-07 14:12:47 [INFO    ] (basehttp.log_message) "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+2025-03-07 14:12:47 [INFO    ] (basehttp.log_message) "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+2025-03-07 14:12:47 [INFO    ] (basehttp.log_message) "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+2025-03-07 14:12:47 [INFO    ] (basehttp.log_message) "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+2025-03-07 14:12:47 [INFO    ] (basehttp.log_message) "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+2025-03-07 14:12:47 [INFO    ] (basehttp.log_message) "GET /static/admin/js/core.js HTTP/1.1" 304 0
+2025-03-07 14:12:47 [INFO    ] (basehttp.log_message) "GET /static/admin/js/core.js HTTP/1.1" 304 0
+2025-03-07 14:12:47 [INFO    ] (basehttp.log_message) "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+2025-03-07 14:12:47 [INFO    ] (basehttp.log_message) "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+2025-03-07 14:12:47 [INFO    ] (basehttp.log_message) "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+2025-03-07 14:12:47 [INFO    ] (basehttp.log_message) "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+2025-03-07 14:12:47 [INFO    ] (basehttp.log_message) "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+2025-03-07 14:12:47 [INFO    ] (basehttp.log_message) "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+2025-03-07 14:12:47 [INFO    ] (basehttp.log_message) "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+2025-03-07 14:12:47 [INFO    ] (basehttp.log_message) "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+2025-03-07 14:12:47 [INFO    ] (basehttp.log_message) "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+2025-03-07 14:12:47 [INFO    ] (basehttp.log_message) "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+2025-03-07 14:12:47 [INFO    ] (basehttp.log_message) "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+2025-03-07 14:12:47 [INFO    ] (basehttp.log_message) "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+2025-03-07 14:12:47 [INFO    ] (basehttp.log_message) "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+2025-03-07 14:12:47 [INFO    ] (basehttp.log_message) "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+2025-03-07 14:12:47 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 14:12:47 [INFO    ] (basehttp.log_message) "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-03-07 14:12:47 [INFO    ] (basehttp.log_message) "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+2025-03-07 14:12:47 [INFO    ] (basehttp.log_message) "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+2025-03-07 14:12:47 [INFO    ] (basehttp.log_message) "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+2025-03-07 14:12:47 [INFO    ] (basehttp.log_message) "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+2025-03-07 14:12:48 [INFO    ] (basehttp.log_message) "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+2025-03-07 14:12:48 [INFO    ] (basehttp.log_message) "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+2025-03-07 14:12:48 [INFO    ] (basehttp.log_message) "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+2025-03-07 14:12:48 [INFO    ] (basehttp.log_message) "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+2025-03-07 14:13:42 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 30410
+2025-03-07 14:13:42 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 30410
+2025-03-07 14:13:45 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:13:45 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:13:47 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E7%94%9F%E6%8A%80 HTTP/1.1" 200 347
+2025-03-07 14:13:47 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E7%94%9F%E6%8A%80 HTTP/1.1" 200 347
+2025-03-07 14:13:48 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E7%94%9F%E6%8A%80 HTTP/1.1" 200 19
+2025-03-07 14:13:48 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E7%94%9F%E6%8A%80 HTTP/1.1" 200 19
+2025-03-07 14:13:51 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:13:51 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:14:04 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 30410
+2025-03-07 14:14:04 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 30410
+2025-03-07 14:14:05 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 30410
+2025-03-07 14:14:05 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 30410
+2025-03-07 14:14:06 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 30410
+2025-03-07 14:14:06 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 30410
+2025-03-07 14:14:06 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 30410
+2025-03-07 14:14:06 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 30410
+2025-03-07 14:14:06 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 30410
+2025-03-07 14:14:06 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 30410
+2025-03-07 14:14:07 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:14:07 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:14:08 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E7%94%9F%E6%8A%80 HTTP/1.1" 200 347
+2025-03-07 14:14:08 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E7%94%9F%E6%8A%80 HTTP/1.1" 200 347
+2025-03-07 14:14:10 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E7%94%9F%E6%8A%80 HTTP/1.1" 200 19
+2025-03-07 14:14:10 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E7%94%9F%E6%8A%80 HTTP/1.1" 200 19
+2025-03-07 14:14:11 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:14:11 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:14:36 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 30458
+2025-03-07 14:14:36 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 30458
+2025-03-07 14:14:36 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 30458
+2025-03-07 14:14:36 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 30458
+2025-03-07 14:14:41 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:14:41 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:14:42 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E7%94%9F%E6%8A%80 HTTP/1.1" 200 347
+2025-03-07 14:14:42 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E7%94%9F%E6%8A%80 HTTP/1.1" 200 347
+2025-03-07 14:14:44 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:14:44 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:15:03 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 30502
+2025-03-07 14:15:03 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 30502
+2025-03-07 14:15:04 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:15:04 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:15:05 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E7%94%9F%E6%8A%80 HTTP/1.1" 200 347
+2025-03-07 14:15:05 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E7%94%9F%E6%8A%80 HTTP/1.1" 200 347
+2025-03-07 14:15:07 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:15:07 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:16:51 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 31291
+2025-03-07 14:16:51 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 31291
+2025-03-07 14:16:52 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:16:52 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:16:53 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E7%94%9F%E6%8A%80 HTTP/1.1" 200 347
+2025-03-07 14:16:53 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E7%94%9F%E6%8A%80 HTTP/1.1" 200 347
+2025-03-07 14:16:54 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:16:54 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:17:08 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:17:08 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:18:52 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 31427
+2025-03-07 14:18:52 [INFO    ] (basehttp.log_message) "GET / HTTP/1.1" 200 31427
+2025-03-07 14:18:54 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:18:54 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:18:55 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E6%96%B0%E8%83%BD%E6%BA%90 HTTP/1.1" 200 359
+2025-03-07 14:18:55 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E6%96%B0%E8%83%BD%E6%BA%90 HTTP/1.1" 200 359
+2025-03-07 14:19:00 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:19:00 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:19:06 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E7%94%9F%E6%8A%80 HTTP/1.1" 200 347
+2025-03-07 14:19:06 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E7%94%9F%E6%8A%80 HTTP/1.1" 200 347
+2025-03-07 14:19:10 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E7%94%9F%E6%8A%80 HTTP/1.1" 200 19
+2025-03-07 14:19:10 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=AI&industry=%E7%94%9F%E6%8A%80 HTTP/1.1" 200 19
+2025-03-07 14:19:14 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:19:14 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:19:19 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E7%A7%91%E6%8A%80 HTTP/1.1" 200 321
+2025-03-07 14:19:19 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E7%A7%91%E6%8A%80 HTTP/1.1" 200 321
+2025-03-07 14:19:39 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E7%A7%91%E6%8A%80 HTTP/1.1" 200 321
+2025-03-07 14:19:39 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E7%A7%91%E6%8A%80 HTTP/1.1" 200 321
+2025-03-07 14:19:48 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:19:48 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:20:51 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E6%96%B0%E8%83%BD%E6%BA%90 HTTP/1.1" 200 359
+2025-03-07 14:20:51 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E6%96%B0%E8%83%BD%E6%BA%90 HTTP/1.1" 200 359
+2025-03-07 14:20:53 [INFO    ] (basehttp.log_message) "GET /?industry=%E6%96%B0%E8%83%BD%E6%BA%90&keywords=&keywords=%E9%A2%A8%E8%83%BD&time_range=all HTTP/1.1" 200 17067
+2025-03-07 14:20:53 [INFO    ] (basehttp.log_message) "GET /?industry=%E6%96%B0%E8%83%BD%E6%BA%90&keywords=&keywords=%E9%A2%A8%E8%83%BD&time_range=all HTTP/1.1" 200 17067
+2025-03-07 14:21:04 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:21:04 [INFO    ] (basehttp.log_message) "GET /api/industries/ HTTP/1.1" 200 162
+2025-03-07 14:21:06 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 332
+2025-03-07 14:21:06 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry=%E9%87%91%E8%9E%8D HTTP/1.1" 200 332
+2025-03-07 14:21:08 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=%E6%8A%95%E8%B3%87&time_range=all HTTP/1.1" 200 25853
+2025-03-07 14:21:08 [INFO    ] (basehttp.log_message) "GET /?industry=%E9%87%91%E8%9E%8D&keywords=&keywords=%E6%8A%95%E8%B3%87&time_range=all HTTP/1.1" 200 25853
+2025-03-07 14:21:13 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry= HTTP/1.1" 200 294
+2025-03-07 14:21:13 [INFO    ] (basehttp.log_message) "GET /api/keywords/?industry= HTTP/1.1" 200 294
+2025-03-07 14:21:17 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=%E5%8F%B0%E7%A9%8D%E9%9B%BB&industry= HTTP/1.1" 200 2
+2025-03-07 14:21:17 [INFO    ] (basehttp.log_message) "GET /api/keywords/?q=%E5%8F%B0%E7%A9%8D%E9%9B%BB&industry= HTTP/1.1" 200 2
+2025-03-07 14:21:22 [ERROR   ] (log.log_response) Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\code\Python\IndustrySearcher\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\Python\IndustrySearcher\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\Python\IndustrySearcher\app\web\views.py", line 202, in filter_news
+    data, error = client.fetch_news(
+                  ^^^^^^^^^^^^^^^^^^
+  File "D:\code\Python\IndustrySearcher\app\web\management\commands\fetch_news.py", line 33, in fetch_news
+    'q': query,
+         ^^^^^
+UnboundLocalError: cannot access local variable 'query' where it is not associated with a value
+2025-03-07 14:21:22 [ERROR   ] (log.log_response) Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\code\Python\IndustrySearcher\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\Python\IndustrySearcher\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\Python\IndustrySearcher\app\web\views.py", line 202, in filter_news
+    data, error = client.fetch_news(
+                  ^^^^^^^^^^^^^^^^^^
+  File "D:\code\Python\IndustrySearcher\app\web\management\commands\fetch_news.py", line 33, in fetch_news
+    'q': query,
+         ^^^^^
+UnboundLocalError: cannot access local variable 'query' where it is not associated with a value
+2025-03-07 14:21:22 [ERROR   ] (basehttp.log_message) "GET /?industry=&keywords=&keywords=%E5%8F%B0%E7%A9%8D%E9%9B%BB&time_range=today&fetch_new=on HTTP/1.1" 500 84336
+2025-03-07 14:21:22 [ERROR   ] (basehttp.log_message) "GET /?industry=&keywords=&keywords=%E5%8F%B0%E7%A9%8D%E9%9B%BB&time_range=today&fetch_new=on HTTP/1.1" 500 84336
+2025-03-07 14:23:03 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\management\commands\fetch_news.py changed, reloading.
+2025-03-07 14:23:03 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\management\commands\fetch_news.py changed, reloading.
+2025-03-07 14:23:03 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 14:23:03 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
