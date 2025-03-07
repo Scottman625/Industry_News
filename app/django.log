@@ -2764,3 +2764,19 @@ UnboundLocalError: cannot access local variable 'query' where it is not associat
 2025-03-07 14:23:03 [INFO    ] (autoreload.trigger_reload) D:\code\Python\IndustrySearcher\app\web\management\commands\fetch_news.py changed, reloading.
 2025-03-07 14:23:03 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
 2025-03-07 14:23:03 [INFO    ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2025-03-07 14:23:22 [INFO    ] (basehttp.log_message) "GET /?industry=&keywords=&keywords=%E5%8F%B0%E7%A9%8D%E9%9B%BB&time_range=today&fetch_new=on HTTP/1.1" 200 33974
+2025-03-07 14:23:22 [INFO    ] (basehttp.log_message) "GET /?industry=&keywords=&keywords=%E5%8F%B0%E7%A9%8D%E9%9B%BB&time_range=today&fetch_new=on HTTP/1.1" 200 33974
+2025-03-07 14:23:35 [INFO    ] (basehttp.log_message) "GET /?industry=&keywords=&keywords=%E5%8F%B0%E7%A9%8D%E9%9B%BB&time_range=today HTTP/1.1" 200 17115
+2025-03-07 14:23:35 [INFO    ] (basehttp.log_message) "GET /?industry=&keywords=&keywords=%E5%8F%B0%E7%A9%8D%E9%9B%BB&time_range=today HTTP/1.1" 200 17115
+2025-03-07 14:23:38 [INFO    ] (basehttp.log_message) "GET /?industry=&keywords=&keywords=%E5%8F%B0%E7%A9%8D%E9%9B%BB&time_range=today HTTP/1.1" 200 17115
+2025-03-07 14:23:38 [INFO    ] (basehttp.log_message) "GET /?industry=&keywords=&keywords=%E5%8F%B0%E7%A9%8D%E9%9B%BB&time_range=today HTTP/1.1" 200 17115
+2025-03-07 14:23:42 [INFO    ] (basehttp.log_message) "GET /?industry=&keywords=&keywords=%E5%8F%B0%E7%A9%8D%E9%9B%BB&time_range=all HTTP/1.1" 200 33632
+2025-03-07 14:23:42 [INFO    ] (basehttp.log_message) "GET /?industry=&keywords=&keywords=%E5%8F%B0%E7%A9%8D%E9%9B%BB&time_range=all HTTP/1.1" 200 33632
+2025-03-07 14:23:45 [INFO    ] (basehttp.log_message) "GET /?industry=&keywords=&keywords=%E5%8F%B0%E7%A9%8D%E9%9B%BB&time_range=today HTTP/1.1" 200 17115
+2025-03-07 14:23:45 [INFO    ] (basehttp.log_message) "GET /?industry=&keywords=&keywords=%E5%8F%B0%E7%A9%8D%E9%9B%BB&time_range=today HTTP/1.1" 200 17115
+2025-03-07 14:23:48 [INFO    ] (basehttp.log_message) "GET /?industry=&keywords=&keywords=%E5%8F%B0%E7%A9%8D%E9%9B%BB&time_range=week HTTP/1.1" 200 33635
+2025-03-07 14:23:48 [INFO    ] (basehttp.log_message) "GET /?industry=&keywords=&keywords=%E5%8F%B0%E7%A9%8D%E9%9B%BB&time_range=week HTTP/1.1" 200 33635
+2025-03-07 14:24:06 [INFO    ] (basehttp.log_message) "GET /?industry=&keywords=&keywords=%E5%8F%B0%E7%A9%8D%E9%9B%BB&time_range=today HTTP/1.1" 200 17115
+2025-03-07 14:24:06 [INFO    ] (basehttp.log_message) "GET /?industry=&keywords=&keywords=%E5%8F%B0%E7%A9%8D%E9%9B%BB&time_range=today HTTP/1.1" 200 17115
+2025-03-07 14:24:09 [INFO    ] (basehttp.log_message) "GET /?industry=&keywords=&keywords=%E5%8F%B0%E7%A9%8D%E9%9B%BB&time_range=week HTTP/1.1" 200 33635
+2025-03-07 14:24:09 [INFO    ] (basehttp.log_message) "GET /?industry=&keywords=&keywords=%E5%8F%B0%E7%A9%8D%E9%9B%BB&time_range=week HTTP/1.1" 200 33635
