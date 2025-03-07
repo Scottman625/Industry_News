@@ -221,42 +221,222 @@
 <script>
     $(document).ready(function() {
         // 初始化產業選擇
-        $('#{{ form.industry.id_for_label }}').select2({
+        var $industry = $('#{{ form.industry.id_for_label }}').select2({
             theme: 'bootstrap-5',
-            placeholder: '選擇或輸入產業類別...',
-            allowClear: true,
+            width: '100%',
             tags: true,
+            allowClear: true,
+            placeholder: '選擇或輸入產業類別...',
+            ajax: {
+                url: '{% url "get_industries" %}',
+                dataType: 'json',
+                delay: 250,
+                data: function(params) {
+                    return {
+                        q: params.term
+                    };
+                },
+                processResults: function(data) {
+                    return {
+                        results: data.map(function(item) {
+                            return {
+                                id: item.name,
+                                text: item.name
+                            };
+                        })
+                    };
+                },
+                cache: true
+            },
             createTag: function(params) {
                 return {
                     id: params.term,
                     text: params.term,
-                    newTag: true
-                }
+                    newOption: true
+                };
             }
         });
         
         // 初始化關鍵字選擇
-        $('#{{ form.keywords.id_for_label }}').select2({
+        var $keywords = $('#{{ form.keywords.id_for_label }}').select2({
             theme: 'bootstrap-5',
-            placeholder: '選擇或輸入關鍵字...',
-            allowClear: true,
+            width: '100%',
             tags: true,
+            allowClear: true,
             multiple: true,
+            placeholder: '選擇或輸入關鍵字...',
+            ajax: {
+                url: '{% url "get_keywords" %}',
+                dataType: 'json',
+                delay: 250,
+                data: function(params) {
+                    return {
+                        q: params.term,
+                        industry: $('#{{ form.industry.id_for_label }}').val()
+                    };
+                },
+                processResults: function(data) {
+                    return {
+                        results: data.map(function(item) {
+                            return {
+                                id: item.keyword,
+                                text: item.keyword
+                            };
+                        })
+                    };
+                },
+                cache: true
+            },
             createTag: function(params) {
                 return {
                     id: params.term,
                     text: params.term,
-                    newTag: true
-                }
+                    newOption: true
+                };
             }
         });
 
-        // 初始化工具提示
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-            return new bootstrap.Tooltip(tooltipTriggerEl)
+        // 監聽產業輸入框的按鍵事件
+        $industry.on('select2:open', function() {
+            var $search = $('.select2-search__field').last();
+            $search.off('keyup.custom').on('keyup.custom', function(e) {
+                if (e.key === 'Enter') {
+                    var term = $(this).val().trim();
+                    if (term) {
+                        var $option = new Option(term, term, true, true);
+                        $industry.append($option).trigger('change');
+                        $industry.select2('close');
+                    }
+                }
+            });
         });
+
+        // 監聽關鍵字輸入框的按鍵事件
+        $keywords.on('select2:open', function() {
+            var $search = $('.select2-search__field').last();
+            $search.off('keyup.custom').on('keyup.custom', function(e) {
+                if (e.key === 'Enter') {
+                    var term = $(this).val().trim();
+                    if (term) {
+                        var currentVals = $keywords.val() || [];
+                        if (!currentVals.includes(term)) {
+                            currentVals.push(term);
+                            var $option = new Option(term, term, true, true);
+                            $keywords.append($option);
+                            $keywords.val(currentVals).trigger('change');
+                        }
+                    }
+                }
+            });
+        });
+
+        // 當產業變更時，重置關鍵字
+        $industry.on('change', function() {
+            var selectedValues = $keywords.val() || [];
+            $keywords.val(null).trigger('change');
+            
+            // 如果有已選擇的值，保留它們
+            if (selectedValues.length > 0) {
+                selectedValues.forEach(function(value) {
+                    var option = new Option(value, value, true, true);
+                    $keywords.append(option);
+                });
+                $keywords.trigger('change');
+            }
+        });
+
+        // 表單提交前的處理
+        $('form').on('submit', function(event) {
+            // 阻止表單默認提交行為
+            event.preventDefault();
+            
+            debugger; // 這裡會在開發者工具打開時暫停執行
+
+            // 先捕獲所有輸入框的值
+            var pendingValues = {
+                industry: null,
+                keywords: []
+            };
+
+            // 檢查產業輸入框
+            var $industryContainer = $industry.data('select2').$container;
+            if ($industryContainer.hasClass('select2-container--focus') || $industryContainer.hasClass('select2-container--open')) {
+                var $industrySearch = $industryContainer.find('.select2-search__field');
+                if ($industrySearch.length > 0) {
+                    pendingValues.industry = $industrySearch.val().trim();
+                }
+            }
+
+            // 檢查關鍵字輸入框
+            var $keywordsContainer = $keywords.data('select2').$container;
+            if ($keywordsContainer.hasClass('select2-container--focus') || $keywordsContainer.hasClass('select2-container--open')) {
+                var $keywordSearch = $keywordsContainer.find('.select2-search__field');
+                if ($keywordSearch.length > 0) {
+                    var keywordTerm = $keywordSearch.val().trim();
+                    if (keywordTerm) {
+                        pendingValues.keywords.push(keywordTerm);
+                    }
+                }
+            }
+
+            // 關閉所有 Select2 下拉框
+            $industry.select2('close');
+            $keywords.select2('close');
+
+            // 處理產業值
+            if (pendingValues.industry) {
+                var $option = new Option(pendingValues.industry, pendingValues.industry, true, true);
+                $industry.append($option).trigger('change');
+                $industry.val(pendingValues.industry).trigger('change');
+                console.log('已添加產業：', pendingValues.industry);
+            }
+
+            // 處理關鍵字值
+            if (pendingValues.keywords.length > 0) {
+                var currentVals = $keywords.val() || [];
+                pendingValues.keywords.forEach(function(term) {
+                    if (!currentVals.includes(term)) {
+                        currentVals.push(term);
+                        var $option = new Option(term, term, true, true);
+                        $keywords.append($option);
+                    }
+                });
+                $keywords.val(currentVals).trigger('change');
+                console.log('已添加關鍵字：', pendingValues.keywords);
+            }
+
+            // 確保所有選中的值都有對應的選項
+            var industryVal = $industry.val();
+            if (industryVal && !$industry.find("option[value='" + industryVal + "']").length) {
+                var $option = new Option(industryVal, industryVal, true, true);
+                $industry.append($option).trigger('change');
+            }
+
+            var keywordVals = $keywords.val() || [];
+            keywordVals.forEach(function(val) {
+                if (!$keywords.find("option[value='" + val + "']").length) {
+                    var $option = new Option(val, val, true, true);
+                    $keywords.append($option);
+                }
+            });
+            $keywords.trigger('change');
+
+            console.log('表單即將提交');
+            console.log('產業值：', $industry.val());
+            console.log('關鍵字值：', $keywords.val());
+            
+            // 延遲一下再提交，確保所有值都被正確處理
+            setTimeout(() => {
+                this.submit();
+            }, 100);
+        });
+
+        // 初始化工具提示
+        $('[data-bs-toggle="tooltip"]').tooltip();
     });
 </script>
 </body>
 </html>
+
+
+

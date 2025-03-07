@@ -7,6 +7,7 @@ from .forms import FilterForm
 from modelCore.models import NewsArticle, Keyword, Industry
 from .management.commands.fetch_news import NewsAPIClient, save_articles
 from datetime import datetime, timedelta
+from django.http import JsonResponse
 
 def preprocess_text(text):
     """
@@ -125,11 +126,27 @@ def filter_news(request):
                     messages.info(request, "沒有找到新的文章")
         
         # 篩選文章
-        if industry_name:
-            articles = articles.filter(industries__name=industry_name)
+        q = Q()
         
+        # 處理產業篩選
+        if industry_name:
+            # 先查找產業關聯的文章
+            industry_q = Q(industries__name=industry_name)
+            # 再查找標題或描述中包含產業名稱的文章
+            text_q = Q(title__icontains=industry_name) | Q(description__icontains=industry_name)
+            q |= industry_q | text_q
+        
+        # 處理關鍵字篩選
         if keyword_list:
-            articles = articles.filter(keywords__keyword__in=keyword_list)
+            for keyword in keyword_list:
+                # 先查找關鍵字關聯的文章
+                keyword_q = Q(keywords__keyword=keyword)
+                # 再查找標題或描述中包含關鍵字的文章
+                text_q = Q(title__icontains=keyword) | Q(description__icontains=keyword)
+                q |= keyword_q | text_q
+        
+        if q:
+            articles = articles.filter(q)
     
     # 分頁處理
     page_number = request.GET.get('page', 1)
@@ -147,3 +164,24 @@ def filter_news(request):
         'current_filters': request.GET.dict(),
     }
     return render(request, 'filter_news.html', context)
+
+def get_industries(request):
+    """獲取產業建議列表"""
+    query = request.GET.get('q', '')
+    industries = Industry.objects.filter(name__icontains=query)[:10]
+    return JsonResponse(list(industries.values('name')), safe=False)
+
+def get_keywords(request):
+    """獲取關鍵字建議列表"""
+    query = request.GET.get('q', '')
+    industry = request.GET.get('industry', '')
+    
+    keywords = Keyword.objects.all()
+    
+    if industry:
+        keywords = keywords.filter(industry__name=industry)
+    
+    if query:
+        keywords = keywords.filter(keyword__icontains=query)
+    
+    return JsonResponse(list(keywords.values('keyword'))[:10], safe=False)

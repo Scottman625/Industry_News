@@ -14,17 +14,19 @@ class FilterForm(forms.Form):
         label='產業類別',
         widget=forms.Select(attrs={
             'class': 'form-select select2-with-tag',
-            'data-placeholder': '選擇或輸入產業類別...'
+            'data-placeholder': '選擇或輸入產業類別...',
+            'data-allow-input': 'true'
         })
     )
     
     keywords = forms.CharField(
         required=False,
         label='關鍵字',
-        widget=forms.Select(attrs={
+        widget=forms.SelectMultiple(attrs={
             'class': 'form-select select2-with-tag',
             'data-placeholder': '選擇或輸入關鍵字...',
-            'multiple': 'multiple'
+            'multiple': 'multiple',
+            'data-allow-input': 'true'
         })
     )
     
@@ -54,17 +56,37 @@ class FilterForm(forms.Form):
             (k.keyword, k.keyword) for k in Keyword.objects.all()
         ]
     
+    def clean_industry(self):
+        """處理產業輸入"""
+        industry = self.cleaned_data.get('industry', '')
+        if industry:
+            # 如果輸入的產業不存在，則創建新的產業
+            Industry.objects.get_or_create(name=industry)
+        return industry
+
+    def clean_keywords(self):
+        """處理關鍵字輸入"""
+        keywords = self.cleaned_data.get('keywords', '')
+        if isinstance(keywords, str):
+            # 如果是字符串，按逗號分割並清理空白
+            keywords = [k.strip() for k in keywords.split(',') if k.strip()]
+        elif isinstance(keywords, list):
+            keywords = [k.strip() for k in keywords if k.strip()]
+        
+        # 為每個關鍵字創建記錄（如果不存在）
+        for keyword in keywords:
+            Keyword.objects.get_or_create(keyword=keyword)
+        
+        return keywords
+    
     def clean(self):
         cleaned_data = super().clean()
         industry = cleaned_data.get('industry')
-        keywords = cleaned_data.get('keywords', '').split(',')  # 將多選的值分割成列表
-        keywords = [k.strip() for k in keywords if k.strip()]  # 清理空白
+        keywords = cleaned_data.get('keywords', [])  # 已經被 clean_keywords 處理成列表
         fetch_new = cleaned_data.get('fetch_new')
         
         # 如果要獲取新聞，必須至少選擇一個產業或關鍵字
         if fetch_new and not (industry or keywords):
             raise forms.ValidationError("獲取新聞時必須選擇或輸入至少一個產業或關鍵字")
         
-        # 更新清理後的關鍵字
-        cleaned_data['keywords'] = keywords
         return cleaned_data
