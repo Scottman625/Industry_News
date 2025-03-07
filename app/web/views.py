@@ -41,7 +41,14 @@ def create_or_get_keywords(keyword_str, industry=None):
         return []
     
     keywords = []
+    # 如果輸入是字符串形式的列表，先進行清理
+    if isinstance(keyword_str, str):
+        # 移除可能的列表符號 ['xxx'] 或 ["xxx"]
+        keyword_str = keyword_str.strip('[]\'\"')
+    
     for kw in [k.strip() for k in keyword_str.split(',') if k.strip()]:
+        # 再次清理每個關鍵字
+        kw = kw.strip('\'\"[] ')
         keyword, created = Keyword.objects.get_or_create(
             keyword=kw,
             defaults={'industry': industry}
@@ -56,6 +63,8 @@ def filter_news(request):
     if form.is_valid():
         industry_name = form.cleaned_data.get('industry')
         keyword_list = form.cleaned_data.get('keywords', [])
+        # 清理關鍵字列表
+        keyword_list = [k.strip('[]\'\"') for k in keyword_list]
         fetch_new = form.cleaned_data.get('fetch_new', False)
         time_range = form.cleaned_data.get('time_range', 'all')
         
@@ -138,12 +147,13 @@ def filter_news(request):
         
         # 處理關鍵字篩選
         if keyword_list:
+            keyword_q = Q()
             for keyword in keyword_list:
                 # 先查找關鍵字關聯的文章
-                keyword_q = Q(keywords__keyword=keyword)
+                keyword_q |= Q(keywords__keyword=keyword)
                 # 再查找標題或描述中包含關鍵字的文章
-                text_q = Q(title__icontains=keyword) | Q(description__icontains=keyword)
-                q |= keyword_q | text_q
+                keyword_q |= Q(title__icontains=keyword) | Q(description__icontains=keyword)
+            q |= keyword_q
         
         if q:
             articles = articles.filter(q)
