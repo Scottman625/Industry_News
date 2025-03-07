@@ -8,6 +8,37 @@ from django.utils import timezone
 # Create your models here.
 # news_app/models.py
 
+def clean_text(text):
+    """
+    清理文字，移除不必要的符號和空白
+    """
+    if not text:
+        return ""
+    
+    # 如果是列表，取第一個元素
+    if isinstance(text, list):
+        text = text[0] if text else ""
+        
+    # 處理字符串
+    if isinstance(text, str):
+        # 如果文字看起來像列表字符串，嘗試解析它
+        if text.startswith('[') and text.endswith(']'):
+            try:
+                import ast
+                # 安全地解析字符串為Python對象
+                parsed = ast.literal_eval(text)
+                if isinstance(parsed, list) and parsed:
+                    text = parsed[0]
+            except:
+                pass
+        
+        # 移除可能的列表符號和引號
+        text = text.strip('[]\'\"')
+        # 移除額外的空白
+        text = text.strip()
+        
+    return text
+
 class UserManager(BaseUserManager):
     def create_user(self, email, password=None, **extra_fields):
         """Creates and saves a new user"""
@@ -67,6 +98,10 @@ class Industry(models.Model):
     def __str__(self):
         return self.name
 
+    def save(self, *args, **kwargs):
+        self.name = clean_text(self.name)
+        super().save(*args, **kwargs)
+
     class Meta:
         verbose_name = "產業"
         verbose_name_plural = "產業"
@@ -86,6 +121,10 @@ class Keyword(models.Model):
 
     def __str__(self):
         return self.keyword
+
+    def save(self, *args, **kwargs):
+        self.keyword = clean_text(self.keyword)
+        super().save(*args, **kwargs)
 
     class Meta:
         verbose_name = "關鍵字"
@@ -125,20 +164,32 @@ class NewsArticle(models.Model):
         """
         檢測文章內容中的產業和關鍵字，並建立關聯
         """
-        # 獲取所有關鍵字
-        all_keywords = Keyword.objects.all()
+        # 先檢查文章是否已有關聯的產業
+        existing_industries = self.industries.all()
         
-        # 檢查標題和描述中的關鍵字
-        for keyword in all_keywords:
-            if (keyword.keyword in self.title or 
-                (self.description and keyword.keyword in self.description)):
-                # 添加關鍵字關聯
-                self.keywords.add(keyword)
-                # 如果關鍵字有關聯的產業，也添加產業關聯
-                if keyword.industry:
-                    self.industries.add(keyword.industry)
+        for industry in existing_industries:
+            # 只檢查該產業下的關鍵字
+            industry_keywords = Keyword.objects.filter(industry=industry)
+            
+            # 檢查標題和描述中的關鍵字（使用完整詞匹配）
+            for keyword in industry_keywords:
+                # 避免重複添加已存在的關鍵字
+                if not self.keywords.filter(id=keyword.id).exists():
+                    # 使用完整詞匹配來檢查
+                    clean_keyword = clean_text(keyword.keyword)
+                    clean_title = clean_text(self.title)
+                    clean_description = clean_text(self.description)
+                    
+                    if ((clean_title and f" {clean_keyword} " in f" {clean_title} ") or 
+                        (clean_description and f" {clean_keyword} " in f" {clean_description} ")):
+                        self.keywords.add(keyword)
 
     def save(self, *args, **kwargs):
+        # 清理文章內容
+        self.title = clean_text(self.title)
+        if self.description:
+            self.description = clean_text(self.description)
+        
         # 先保存文章本身
         super().save(*args, **kwargs)
         # 然後檢測並關聯產業和關鍵字

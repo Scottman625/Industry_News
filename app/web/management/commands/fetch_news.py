@@ -58,15 +58,15 @@ def save_articles(articles, keyword_obj=None, stdout=None):
                 # 如果關鍵字有關聯的產業，也添加產業關聯
                 if keyword_obj.industry:
                     news.industries.add(keyword_obj.industry)
-            
-            # 檢測標題和描述中是否包含其他關鍵字
-            all_keywords = Keyword.objects.all()
-            for kw in all_keywords:
-                if (kw.keyword in news.title or 
-                    (news.description and kw.keyword in news.description)):
-                    news.keywords.add(kw)
-                    if kw.industry:
-                        news.industries.add(kw.industry)
+                    
+                    # 只檢查同一產業下的其他關鍵字
+                    related_keywords = Keyword.objects.filter(industry=keyword_obj.industry)
+                    for kw in related_keywords:
+                        if kw.id != keyword_obj.id:  # 避免重複添加原始關鍵字
+                            # 檢查關鍵字是否出現在標題或描述中（使用完整詞匹配）
+                            if ((news.title and f" {kw.keyword} " in f" {news.title} ") or 
+                                (news.description and f" {kw.keyword} " in f" {news.description} ")):
+                                news.keywords.add(kw)
             
             saved_count += 1
             if stdout:
